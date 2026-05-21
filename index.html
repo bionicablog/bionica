@@ -3,18 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lo Que Nadie Te Explica · Blog de divulgación ortopédica</title>
+<title>Biónika Salud · Blog de divulgación ortopédica</title>
 <meta name="description" content="Artículos de salud ortopédica, biomecánica y movilidad por Julián Urrea, Técnico Ortoprotésico en Granada.">
-<meta property="og:title" content="Lo Que Nadie Te Explica · Blog de divulgación ortopédica">
-<meta property="og:description" content="Artículos claros sobre ortopedia, biomecánica y movilidad. Sin tecnicismos innecesarios. Por Julián Urrea, Técnico Ortoprotésico en Granada.">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="es_ES">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lo Que Nadie Te Explica · Blog de divulgación ortopédica">
-<meta name="twitter:description" content="Artículos claros sobre ortopedia, biomecánica y movilidad. Por Julián Urrea, TO en Granada.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Fuentes del sistema — funciona sin conexión */
+</style>
 <style>
 /* ── BUSCADOR HERO ── */
 .hero-search {
@@ -102,25 +95,25 @@
    TOKENS DE DISEÑO
 ═══════════════════════════════ */
 :root {
-  --ink:       #22252e;
-  --ink-2:     #3a3f4a;
-  --ink-3:     #6b6f7a;
-  --ink-4:     #9a9da8;
-  --paper:     #f4f2ee;
-  --paper-2:   #eae7e0;
-  --paper-3:   #dedad1;
-  --forest:    #3a3f4a;
-  --forest-2:  #4d5360;
-  --forest-3:  #6b7282;
-  --forest-t:  rgba(58,63,74,0.07);
-  --copper:    #a07830;
-  --copper-2:  #bc9244;
-  --copper-t:  rgba(160,120,48,0.12);
-  --rule:      rgba(34,37,46,0.10);
-  --rule-2:    rgba(34,37,46,0.06);
-  --serif:     'Lora', 'Georgia', serif;
-  --body:      'Lora', 'Georgia', serif;
-  --sans:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --ink:       #1c1c1a;
+  --ink-2:     #3d3d3a;
+  --ink-3:     #6b6b66;
+  --ink-4:     #9a9a94;
+  --paper:     #faf8f4;
+  --paper-2:   #f3f0ea;
+  --paper-3:   #ebe7de;
+  --forest:    #1e3d2f;
+  --forest-2:  #2c5a44;
+  --forest-3:  #3d7a5e;
+  --forest-t:  rgba(30,61,47,0.06);
+  --copper:    #b85c2a;
+  --copper-2:  #d4703a;
+  --copper-t:  rgba(184,92,42,0.12);
+  --rule:      rgba(28,28,26,0.1);
+  --rule-2:    rgba(28,28,26,0.06);
+  --serif:     'Georgia', 'Times New Roman', serif;
+  --body:      'Georgia', 'Times New Roman', serif;
+  --sans:      -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
   --r:         6px;
   --r-lg:      12px;
 }
@@ -579,10 +572,10 @@ img { display: block; }
   font-family: var(--sans); font-size: 12px; font-weight: 500;
   color: var(--forest-2); text-align: center;
   padding: 8px; border-radius: var(--r);
-  background: rgba(58,63,74,0.08);
+  background: rgba(30,61,47,0.08);
   transition: background .2s;
 }
-.author-block-link:hover { background: rgba(58,63,74,0.15); }
+.author-block-link:hover { background: rgba(30,61,47,0.15); }
 
 /* ═══════════════════════════════
    VISTA ARTÍCULO
@@ -654,8 +647,8 @@ img { display: block; }
 /* Disclaimer */
 .disclaimer {
   display: flex; gap: 14px; align-items: flex-start;
-  background: #faf8f4;
-  border: 1px solid rgba(160,120,48,0.2);
+  background: #fffbf4;
+  border: 1px solid rgba(184,92,42,0.2);
   border-left: 3px solid var(--copper);
   border-radius: 0 var(--r) var(--r) 0;
   padding: 16px 20px; margin-bottom: 36px;
@@ -663,7 +656,7 @@ img { display: block; }
 .disclaimer svg { flex-shrink: 0; margin-top: 2px; }
 .disclaimer p {
   font-family: var(--sans);
-  font-size: 13px; color: #6b5520;
+  font-size: 13px; color: #7a4a1e;
   line-height: 1.6; margin: 0;
 }
 
@@ -764,7 +757,7 @@ img { display: block; }
   transition: all .2s;
 }
 .article-nav-btn:hover {
-  border-color: rgba(58,63,74,0.25);
+  border-color: rgba(30,61,47,0.25);
   background: var(--paper);
   transform: translateY(-2px);
 }
@@ -811,6 +804,66 @@ img { display: block; }
 }
 
 /* ═══════════════════════════════
+   PANEL NUEVO ARTÍCULO
+═══════════════════════════════ */
+.new-post-panel {
+  display: none;
+  background: var(--paper-2);
+  border: 1.5px dashed rgba(30,61,47,0.3);
+  border-radius: var(--r-lg);
+  padding: 36px 40px;
+  margin-bottom: 48px;
+}
+.new-post-panel.open { display: block; }
+.new-post-panel h3 {
+  font-family: var(--serif);
+  font-size: 22px; font-weight: 600;
+  color: var(--forest); margin-bottom: 24px;
+}
+.field { margin-bottom: 18px; }
+.field label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 11px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 1.2px;
+  color: var(--ink-3); margin-bottom: 7px;
+}
+.field input, .field textarea, .field select {
+  width: 100%;
+  padding: 11px 16px;
+  font-family: var(--body); font-size: 15px;
+  background: var(--paper); color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: var(--r);
+  outline: none; transition: border-color .2s;
+}
+.field input:focus, .field textarea:focus, .field select:focus {
+  border-color: var(--forest-3);
+}
+.field textarea { min-height: 100px; resize: vertical; }
+.field textarea.tall { min-height: 320px; }
+.field-hint {
+  font-family: var(--sans); font-size: 12px;
+  color: var(--ink-4); margin-top: 5px; line-height: 1.5;
+}
+.fields-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.btn-publish {
+  background: var(--forest); color: #fff;
+  border: none; padding: 12px 30px;
+  border-radius: var(--r);
+  font-family: var(--sans); font-size: 14px; font-weight: 500;
+  transition: background .2s;
+}
+.btn-publish:hover { background: var(--forest-2); }
+.btn-cancel {
+  background: transparent; color: var(--ink-3);
+  border: 1px solid var(--rule);
+  padding: 12px 22px; border-radius: var(--r);
+  font-family: var(--sans); font-size: 14px;
+  margin-left: 10px;
+}
+
+/* ═══════════════════════════════
    COOKIE BANNER
 ═══════════════════════════════ */
 .cookie-banner {
@@ -844,6 +897,21 @@ img { display: block; }
   transition: all .2s;
 }
 .btn-essential:hover { color: #fff; border-color: rgba(255,255,255,0.45); }
+
+/* ═══════════════════════════════
+   FAB
+═══════════════════════════════ */
+.fab {
+  position: fixed; bottom: 32px; right: 32px;
+  background: var(--copper); color: #fff; border: none;
+  padding: 14px 24px; border-radius: 50px;
+  font-family: var(--sans); font-size: 14px; font-weight: 500;
+  box-shadow: 0 4px 20px rgba(184,92,42,0.4);
+  display: flex; align-items: center; gap: 8px;
+  transition: transform .2s, box-shadow .2s;
+  z-index: 300;
+}
+.fab:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(184,92,42,0.45); }
 
 /* Toast */
 .toast {
@@ -926,7 +994,7 @@ img { display: block; }
   color: var(--ink-2); line-height: 1.8; margin-bottom: 6px;
 }
 .dato-box {
-  background: rgba(58,63,74,0.05);
+  background: rgba(30,61,47,0.05);
   border-radius: var(--r);
   padding: 16px 20px; margin-bottom: 16px;
 }
@@ -994,11 +1062,6 @@ img { display: block; }
 @media (max-width: 900px) {
   .header-wrap { padding: 0 20px; }
   .hero { padding: 64px 20px 56px; }
-  .hero-inner { text-align: left; }
-  .hero-kicker { justify-content: flex-start; }
-  .hero-search { max-width: 100%; }
-  .hero-ctas { flex-direction: column; }
-  .hero-cta-primary, .hero-cta-secondary { width: 100%; justify-content: center; }
   .cats-strip-inner { padding: 0 20px; }
   .content-grid { grid-template-columns: 1fr; padding: 36px 20px; gap: 48px; }
   .post-card { grid-template-columns: 1fr; }
@@ -1015,55 +1078,10 @@ img { display: block; }
   .legal-body { padding: 28px 20px; }
   .legal-doc { padding: 24px 18px; }
   .cookie-banner { padding: 16px 20px; }
+  .fields-2 { grid-template-columns: 1fr; }
+  .new-post-panel { padding: 24px 20px; }
   .site-nav .nav-hide { display: none; }
 }
-
-@media (max-width: 480px) {
-  .hero-title { font-size: 32px; }
-  .hero-author { flex-direction: column; text-align: center; }
-  .author-info { text-align: center; }
-  .post-title { font-size: 19px; }
-  .article-title { font-size: 26px; }
-  .article-meta-row { gap: 12px; }
-  .stats-grid { grid-template-columns: 1fr 1fr; }
-  .cookie-btns { width: 100%; flex-direction: column; }
-  .btn-accept, .btn-essential { width: 100%; }
-  .header-wrap { height: 58px; }
-  .cats-strip { top: 58px; }
-  .logo-name { font-size: 18px; }
-  .inline-cta { padding: 24px 18px; }
-}
-
-/* ═══════════════════════════════
-   BOTÓN VOLVER ARRIBA
-═══════════════════════════════ */
-#back-to-top {
-  position: fixed;
-  bottom: 100px;
-  right: 32px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--forest);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 3px 16px rgba(58,63,74,0.25);
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity .25s, transform .25s, background .2s;
-  z-index: 290;
-  pointer-events: none;
-}
-#back-to-top.visible {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-#back-to-top:hover { background: var(--forest-2); }
 </style>
 </head>
 <body>
@@ -1072,13 +1090,13 @@ img { display: block; }
 <header class="site-header">
   <div class="header-wrap">
     <div class="site-logo" onclick="showView('list')">
-      <span class="logo-name">LQNTE</span>
-          <span class="logo-label">Lo Que Nadie Te Explica</span>
+      <span class="logo-name">Biónika Salud</span>
+      <span class="logo-label">blog</span>
     </div>
     <nav class="site-nav">
       <a href="#" class="nav-hide" onclick="showView('list');return false;">Inicio</a>
       <a href="#" class="nav-hide" onclick="showView('sobre');return false;">Sobre mí</a>
-      <a href="mailto:loquenadieteexplica.blog@gmail.com" class="nav-cta">Propón un tema →</a>
+      <a href="mailto:hola@bionikasalud.com" class="nav-cta">Escribirme →</a>
     </nav>
   </div>
 </header>
@@ -1121,7 +1139,7 @@ img { display: block; }
       </div>
       <!-- CTAs -->
       <div class="hero-ctas">
-        <a href="mailto:loquenadieteexplica.blog@gmail.com" class="hero-cta-primary">Propón un tema para el blog →</a>
+        <a href="mailto:hola@bionikasalud.com" class="hero-cta-primary">Escribirme directamente →</a>
         <button class="hero-cta-secondary" onclick="toggleLeadMagnet()">📋 Guía gratuita: ¿qué plantilla necesito?</button>
       </div>
       <div class="hero-author">
@@ -1178,6 +1196,49 @@ img { display: block; }
   <!-- Grid principal -->
   <div class="content-grid">
     <main>
+      <!-- Panel nuevo artículo -->
+      <div class="new-post-panel" id="newPanel">
+        <h3>Publicar nuevo artículo</h3>
+        <div class="fields-2">
+          <div class="field">
+            <label>Título *</label>
+            <input id="nTitle" placeholder="Título del artículo…">
+          </div>
+          <div class="field">
+            <label>Categoría *</label>
+            <select id="nCat">
+              <option value="dolor">Dolor y postura</option>
+              <option value="mayores">Personas mayores</option>
+              <option value="deporte">Deporte y salud</option>
+              <option value="movilidad">Movilidad</option>
+              <option value="consejos">Consejos prácticos</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label>Extracto * (2–3 frases para la tarjeta)</label>
+          <textarea id="nExcerpt" placeholder="Resumen breve que aparecerá en la lista…"></textarea>
+        </div>
+        <div class="field">
+          <label>Contenido completo *</label>
+          <textarea id="nContent" class="tall"
+            placeholder="Texto completo del artículo.&#10;&#10;## Para subtítulos usa ##&#10;- Para listas usa guión&#10;> Para citas destacadas usa >&#10;**negrita** con doble asterisco"></textarea>
+          <p class="field-hint">## Subtítulo &nbsp;·&nbsp; - lista &nbsp;·&nbsp; > cita &nbsp;·&nbsp; **negrita**</p>
+        </div>
+        <div class="fields-2">
+          <div class="field">
+            <label>URL imagen portada (opcional)</label>
+            <input id="nImage" placeholder="https://… o dejar vacío">
+          </div>
+          <div class="field">
+            <label>Etiquetas (separadas por coma)</label>
+            <input id="nTags" placeholder="biomecánica, pie, consejos">
+          </div>
+        </div>
+        <button class="btn-publish" onclick="publishPost()">Publicar artículo</button>
+        <button class="btn-cancel" onclick="closePanel()">Cancelar</button>
+      </div>
+
       <!-- Feed de artículos -->
       <div class="posts-feed" id="postsFeed"></div>
       <div class="pagination" id="pagination"></div>
@@ -1187,9 +1248,9 @@ img { display: block; }
     <aside class="sidebar">
       <!-- CTA dinámica (cambia según categoría activa) -->
       <div class="cta-block" id="sideCTA">
-        <div class="cta-block-title" id="sideCtaTitle">¿Hay un tema que quieras entender mejor?</div>
-        <p class="cta-block-text" id="sideCtaText">Si tienes dudas sobre algún concepto ortopédico o quieres que trate un tema concreto, escríbeme y lo tendré en cuenta para próximos artículos.</p>
-        <a href="mailto:loquenadieteexplica.blog@gmail.com" class="cta-btn" id="sideCtaBtn">Proponer un tema →</a>
+        <div class="cta-block-title" id="sideCtaTitle">¿Tu caso necesita una valoración?</div>
+        <p class="cta-block-text" id="sideCtaText">Si lo que lees te resuena y tienes dudas sobre tu caso, puedo orientarte. Escríbeme y hablamos sin compromiso.</p>
+        <a href="mailto:hola@bionikasalud.com" class="cta-btn" id="sideCtaBtn">Escribir a Julián →</a>
       </div>
       <!-- Lead magnet sidebar -->
       <div class="cta-block" style="background:var(--copper-t);border:1px solid rgba(184,92,42,0.2);">
@@ -1224,7 +1285,7 @@ img { display: block; }
   <!-- Disclaimer página principal -->
   <div style="max-width:1200px;margin:0 auto;padding:0 48px 32px;">
     <div class="disclaimer">
-      <svg width="18" height="18" fill="none" stroke="#a07830" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <svg width="18" height="18" fill="none" stroke="#b85c2a" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
       <p>Los contenidos de este blog son informativos y divulgativos. No constituyen diagnóstico médico ni sustituyen la consulta con un profesional sanitario habilitado.</p>
     </div>
   </div>
@@ -1232,7 +1293,7 @@ img { display: block; }
   <footer class="site-footer">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand-name">Lo Que Nadie Te Explica</div>
+        <div class="footer-brand-name">Biónika Salud</div>
         <p class="footer-brand-desc">Blog de salud ortopédica y biomecánica por Julián Urrea, Técnico Ortoprotésico en Granada. Más de 7 años de experiencia clínica.</p>
       </div>
       <div class="footer-col">
@@ -1244,12 +1305,12 @@ img { display: block; }
       </div>
       <div class="footer-col">
         <h4>Contacto</h4>
-        <a href="mailto:loquenadieteexplica.blog@gmail.com">loquenadieteexplica.blog@gmail.com</a>
+        <a href="mailto:hola@bionikasalud.com">hola@bionikasalud.com</a>
         <a href="#" onclick="showView('sobre');return false;">Sobre Julián Urrea</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Lo Que Nadie Te Explica · Julián Urrea, Técnico Ortoprotésico · Granada</span>
+      <span>© 2025 Biónika Salud · Julián Urrea, Técnico Ortoprotésico · Granada</span>
       <div class="footer-legal-links">
         <a onclick="showLegal('legal')">Aviso legal</a>
         <a onclick="showLegal('privacidad')">Privacidad</a>
@@ -1288,7 +1349,7 @@ img { display: block; }
     <div>
       <!-- Disclaimer -->
       <div class="disclaimer">
-        <svg width="18" height="18" fill="none" stroke="#a07830" stroke-width="1.8" viewBox="0 0 24 24">
+        <svg width="18" height="18" fill="none" stroke="#b85c2a" stroke-width="1.8" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="10"/>
           <line x1="12" y1="8" x2="12" y2="12"/>
           <line x1="12" y1="16" x2="12.01" y2="16"/>
@@ -1310,8 +1371,8 @@ img { display: block; }
     <aside class="article-sidebar">
       <div class="cta-block">
         <div class="cta-block-title">¿Te ha sido útil este artículo?</div>
-        <p class="cta-block-text">Si hay algo que no ha quedado claro o quieres que profundice en algún aspecto, escríbeme. Tu pregunta puede convertirse en el próximo artículo.</p>
-        <a href="mailto:loquenadieteexplica.blog@gmail.com" class="cta-btn">Proponer un tema →</a>
+        <p class="cta-block-text">Si tienes dudas sobre tu caso concreto, escríbeme. Puedo orientarte sobre qué pasos seguir sin ningún compromiso.</p>
+        <a href="mailto:hola@bionikasalud.com" class="cta-btn">Escribir a Julián →</a>
       </div>
 
       <div class="progress-wrap">
@@ -1332,7 +1393,7 @@ img { display: block; }
   <footer class="site-footer">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand-name">Lo Que Nadie Te Explica</div>
+        <div class="footer-brand-name">Biónika Salud</div>
         <p class="footer-brand-desc">Blog de salud ortopédica por Julián Urrea, Técnico Ortoprotésico en Granada.</p>
       </div>
       <div class="footer-col">
@@ -1342,12 +1403,12 @@ img { display: block; }
       </div>
       <div class="footer-col">
         <h4>Ortopedia</h4>
-        <a href="mailto:loquenadieteexplica.blog@gmail.com">Contactar con Julián</a>
+        <a href="mailto:hola@bionikasalud.com">Escribir a Julián</a>
         <a href="#" onclick="showView('sobre');return false;">Sobre mí</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Lo Que Nadie Te Explica · Granada</span>
+      <span>© 2025 Biónika Salud · Granada</span>
       <div class="footer-legal-links">
         <a onclick="showLegal('legal')">Aviso legal</a>
         <a onclick="showLegal('privacidad')">Privacidad</a>
@@ -1365,7 +1426,7 @@ img { display: block; }
     <div class="legal-header-inner">
       <button class="legal-back-btn" onclick="legalBack()">← Volver</button>
       <h1 id="legalTitle">Información legal</h1>
-      <p>Lo Que Nadie Te Explica · loquenadieteexplica.com · Julián Urrea</p>
+      <p>Biónika Salud · bionikasalud.com · Julián Urrea</p>
     </div>
   </div>
   <div class="legal-body">
@@ -1379,7 +1440,7 @@ img { display: block; }
       <!-- AVISO LEGAL -->
       <div class="legal-sec on" id="lsLegal">
         <h2>1. Datos del titular</h2>
-        <div class="dato-box"><p><strong>Titular:</strong> Julián Urrea · Técnico Ortoprotésico<br><strong>Dominio:</strong> loquenadieteexplica.com · <strong>Contacto:</strong> <a href="mailto:loquenadieteexplica.blog@gmail.com">loquenadieteexplica.blog@gmail.com</a> · <strong>Localización:</strong> Granada, España</p></div>
+        <div class="dato-box"><p><strong>Titular:</strong> Julián Urrea · Técnico Ortoprotésico<br><strong>Dominio:</strong> bionikasalud.com · <strong>Contacto:</strong> <a href="mailto:hola@bionikasalud.com">hola@bionikasalud.com</a> · <strong>Localización:</strong> Granada, España</p></div>
         <p>En cumplimiento del artículo 10 de la Ley 34/2002 (LSSI-CE) se facilitan los datos de identificación del titular del sitio web.</p>
         <h2>2. Objeto y condiciones de uso</h2>
         <p>Este sitio tiene carácter exclusivamente informativo y divulgativo. Los contenidos están redactados por un técnico ortoprotésico colegiado y pretenden ofrecer información general sobre salud ortopédica, biomecánica y bienestar. <strong>No constituyen diagnóstico médico ni prescripción de tratamiento.</strong> No se realiza venta de productos ni servicios a través de este dominio.</p>
@@ -1394,7 +1455,7 @@ img { display: block; }
       <!-- PRIVACIDAD -->
       <div class="legal-sec" id="lsPrivacidad">
         <h2>1. Responsable del tratamiento</h2>
-        <div class="dato-box"><p><strong>Julián Urrea</strong> · Blog loquenadieteexplica.com · <a href="mailto:loquenadieteexplica.blog@gmail.com">loquenadieteexplica.blog@gmail.com</a> · Granada, España</p></div>
+        <div class="dato-box"><p><strong>Julián Urrea</strong> · Blog bionikasalud.com · <a href="mailto:hola@bionikasalud.com">hola@bionikasalud.com</a> · Granada, España</p></div>
         <h2>2. Datos que recogemos</h2>
         <p>Este sitio no dispone de formularios de registro ni proceso de compra. Si el usuario contacta por email, los datos se usan exclusivamente para atender su consulta. Si acepta cookies analíticas, se recogen datos anónimos de uso mediante Google Analytics.</p>
         <h2>3. Base jurídica</h2>
@@ -1404,7 +1465,7 @@ img { display: block; }
           <li><strong>Emails:</strong> ejecución de relación precontractual (art. 6.1.b RGPD)</li>
         </ul>
         <h2>4. Derechos del usuario</h2>
-        <p>Puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <strong><a href="mailto:loquenadieteexplica.blog@gmail.com">loquenadieteexplica.blog@gmail.com</a></strong> con copia de su DNI. Tiene derecho a reclamar ante la <strong>AEPD</strong> (www.aepd.es). Última actualización: marzo 2025.</p>
+        <p>Puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <strong><a href="mailto:hola@bionikasalud.com">hola@bionikasalud.com</a></strong> con copia de su DNI. Tiene derecho a reclamar ante la <strong>AEPD</strong> (www.aepd.es). Última actualización: marzo 2025.</p>
       </div>
 
       <!-- COOKIES -->
@@ -1428,7 +1489,7 @@ img { display: block; }
   </div>
   <footer class="site-footer">
     <div class="footer-bottom" style="max-width:1200px;margin:0 auto;padding-top:0;">
-      <span>© 2026 Lo Que Nadie Te Explica · Julián Urrea · Granada</span>
+      <span>© 2025 Biónika Salud · Julián Urrea · Granada</span>
       <div class="footer-legal-links">
         <a onclick="showLegal('legal')">Aviso legal</a>
         <a onclick="showLegal('privacidad')">Privacidad</a>
@@ -1534,50 +1595,50 @@ img { display: block; }
 
       <!-- Contacto pacientes -->
       <div style="background:var(--forest);border-radius:var(--r-lg);padding:36px;text-align:center;margin-bottom:20px;">
-        <h3 style="font-family:var(--serif);font-size:22px;font-weight:600;color:#fff;margin-bottom:12px;">¿Hay un tema que quieras leer aquí?</h3>
-        <p style="font-family:var(--body);font-size:15px;font-weight:300;color:rgba(255,255,255,.65);margin-bottom:22px;line-height:1.65;">Si hay algo que no encuentras explicado o quieres que trate un aspecto concreto de la ortopedia, escríbeme. Las preguntas del lector son lo que da forma a este blog.</p>
-        <a href="mailto:loquenadieteexplica.blog@gmail.com" style="display:inline-block;background:var(--copper);color:#fff;padding:13px 30px;border-radius:var(--r);font-family:var(--sans);font-size:14px;font-weight:500;" onmouseover="this.style.background='var(--copper-2)'" onmouseout="this.style.background='var(--copper)'">Proponer un tema →</a>
+        <h3 style="font-family:var(--serif);font-size:22px;font-weight:600;color:#fff;margin-bottom:12px;">¿Tienes una pregunta sin responder?</h3>
+        <p style="font-family:var(--body);font-size:15px;font-weight:300;color:rgba(255,255,255,.65);margin-bottom:22px;line-height:1.65;">Si hay algo que no encuentras explicado, escríbeme. Me gusta saber qué dudas quedan en el aire — es lo que hace que este blog mejore.</p>
+        <a href="mailto:hola@bionikasalud.com" style="display:inline-block;background:var(--copper);color:#fff;padding:13px 30px;border-radius:var(--r);font-family:var(--sans);font-size:14px;font-weight:500;" onmouseover="this.style.background='var(--copper-2)'" onmouseout="this.style.background='var(--copper)'">Escribirme →</a>
       </div>
 
       <!-- Colaboración profesional -->
       <div style="background:var(--paper-2);border:1px solid var(--rule);border-radius:var(--r-lg);padding:36px;text-align:center;">
         <div style="font-family:var(--sans);font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:2.5px;color:var(--ink-4);margin-bottom:14px;">Para profesionales</div>
         <h3 style="font-family:var(--serif);font-size:22px;font-weight:600;color:var(--ink);margin-bottom:12px;">¿Eres profesional del sector?</h3>
-        <p style="font-family:var(--body);font-size:15px;font-weight:300;color:var(--ink-2);margin-bottom:22px;line-height:1.65;">Si trabajas en ortopedia, fisioterapia, podología, rehabilitación o cualquier área relacionada, me encantaría colaborar. Puedes corregirme si ves algo mejorable, aportar tu perspectiva en un artículo, o proponer un tema desde tu experiencia clínica. No busco validación — busco conversación real entre profesionales.</p>
-        <a href="mailto:loquenadieteexplica.blog@gmail.com" style="display:inline-block;background:var(--forest);color:#fff;padding:13px 30px;border-radius:var(--r);font-family:var(--sans);font-size:14px;font-weight:500;" onmouseover="this.style.background='var(--forest-2)'" onmouseout="this.style.background='var(--forest)'">Proponer colaboración →</a>
+        <p style="font-family:var(--body);font-size:15px;font-weight:300;color:var(--ink-2);margin-bottom:22px;line-height:1.65;">Si trabajas en ortopedia, fisioterapia, podología, rehabilitación o cualquier área relacionada, me encantaría contar contigo. Puedes corregirme si ves algo mejorable, aportar tu perspectiva en un artículo, o simplemente intercambiar ideas. No busco validación — busco conversación real entre profesionales.</p>
+        <a href="mailto:hola@bionikasalud.com" style="display:inline-block;background:var(--forest);color:#fff;padding:13px 30px;border-radius:var(--r);font-family:var(--sans);font-size:14px;font-weight:500;" onmouseover="this.style.background='var(--forest-2)'" onmouseout="this.style.background='var(--forest)'">Colaborar contigo →</a>
       </div>
     </div>
 
     <!-- Disclaimer -->
     <div class="disclaimer" style="margin-top:28px;">
-      <svg width="18" height="18" fill="none" stroke="#a07830" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <svg width="18" height="18" fill="none" stroke="#b85c2a" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
       <p>Los contenidos de este blog son informativos y divulgativos. No constituyen diagnóstico médico ni sustituyen la consulta con un profesional sanitario habilitado.</p>
     </div>
   </div>
 
   <footer class="site-footer">
     <div class="footer-bottom" style="max-width:1200px;margin:0 auto;padding-top:0;">
-      <span>© 2026 Lo Que Nadie Te Explica · Julián Urrea, Técnico Ortoprotésico · Granada</span>
+      <span>© 2025 Biónika Salud · Julián Urrea, Técnico Ortoprotésico · Granada</span>
       <div class="footer-legal-links">
         <a onclick="showLegal('legal')">Aviso legal</a>
         <a onclick="showLegal('privacidad')">Privacidad</a>
         <a onclick="showLegal('cookies')">Cookies</a>
-        <a href="mailto:loquenadieteexplica.blog@gmail.com" style="color:rgba(255,255,255,.3);">loquenadieteexplica.blog@gmail.com</a>
+        <a href="mailto:hola@bionikasalud.com" style="color:rgba(255,255,255,.3);">hola@bionikasalud.com</a>
       </div>
     </div>
   </footer>
 </div>
 
-<!-- VOLVER ARRIBA -->
-<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Volver al inicio">
-  <svg width="18" height="18" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+<!-- FAB -->
+<button id="exportBtn" onclick="exportHTML()" style="display:none;position:fixed;bottom:88px;right:24px;z-index:900;background:var(--forest);color:#fff;border:none;border-radius:var(--r);padding:10px 18px;font-family:var(--sans);font-size:13px;font-weight:600;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.2);align-items:center;gap:6px;">
+  💾 Guardar HTML
+</button>
+<button class="fab" id="fabBtn" onclick="openPanel()">
+  <svg width="14" height="14" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+  Nuevo artículo
 </button>
 
 <!-- Toast -->
-<div class="toast" id="toast">
-  <svg width="15" height="15" fill="none" stroke="white" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-  <span id="toastMsg"></span>
-</div>
 <div class="toast" id="toast">
   <svg width="15" height="15" fill="none" stroke="white" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
   <span id="toastMsg"></span>
@@ -1589,30 +1650,30 @@ img { display: block; }
 <script>
 /* ── PALETA CATEGORÍAS ── */
 const CAT = {
-  dolor:    { label:'Me duele algo',               color:'#7a4040',
-    cta:'¿Hay algún tipo de dolor concreto que quieras que explique con más detalle? Escríbeme y lo tengo en cuenta para el siguiente artículo.',
-    ctaBtn:'Proponer un tema →' },
-  mayores:  { label:'Cuido a alguien mayor',       color:'#4a4278',
-    cta:'Si cuidas a alguien y hay dudas sobre productos ortopédicos que no encuentras bien explicadas en el blog, escríbeme y lo abordo en próximos artículos.',
-    ctaBtn:'Proponer un tema →' },
-  deporte:  { label:'Me lesiono haciendo deporte', color:'#2e4e6e',
-    cta:'¿Tienes una lesión o patrón de movimiento que quieras que analice en el blog? Escríbeme y lo incorporo como tema.',
-    ctaBtn:'Proponer un tema →' },
-  movilidad:{ label:'Tengo problemas de movilidad',color:'#3a3f4a',
-    cta:'Si hay alguna situación de movilidad sobre la que quieras más información, escríbeme. Puede ser el próximo artículo.',
-    ctaBtn:'Proponer un tema →' },
-  consejos: { label:'Quiero prevenir problemas',   color:'#4a5830',
-    cta:'¿Qué aspecto de la prevención ortopédica te gustaría que explicara con más detalle? Escríbeme y lo tengo en cuenta.',
-    ctaBtn:'Proponer un tema →' },
+  dolor:    { label:'Me duele algo',               color:'#7a3030',
+    cta:'Si el dolor persiste más de 2–3 semanas o limita tu actividad, un análisis biomecánico puede identificar el origen real. Escríbeme y te cuento cómo funciona.',
+    ctaBtn:'Consultar con Julián →' },
+  mayores:  { label:'Cuido a alguien mayor',       color:'#3a2a6e',
+    cta:'Elegir bien el producto ortopédico para un familiar mayor puede marcar la diferencia en su autonomía y seguridad. Si tienes dudas, escríbeme y te oriento.',
+    ctaBtn:'Consultar con Julián →' },
+  deporte:  { label:'Me lesiono haciendo deporte', color:'#1a4a6e',
+    cta:'Las lesiones por sobreuso casi siempre tienen un origen biomecánico. Un análisis de pisada y movimiento revela qué está fallando antes de que empeore. Escríbeme.',
+    ctaBtn:'Consultar con Julián →' },
+  movilidad:{ label:'Tengo problemas de movilidad',color:'#1e3d2f',
+    cta:'Hay soluciones ortésicas específicas para cada situación de movilidad reducida. Si tienes dudas sobre qué es lo más adecuado para tu caso, escríbeme.',
+    ctaBtn:'Consultar con Julián →' },
+  consejos: { label:'Quiero prevenir problemas',   color:'#4a5a1a',
+    cta:'Prevenir siempre es más fácil que tratar. Si tienes dudas sobre tu calzado, tu pisada o cómo cuidar mejor tus pies, escríbeme y hablamos.',
+    ctaBtn:'Consultar con Julián →' },
 };
 
 /* ── IMÁGENES SVG (ilustraciones por categoría, embebidas) ── */
 const SVG_IMAGES = {
-  dolor: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNhMWExYSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2YTJhMmEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cxIiBjeD0iNzUlIiBjeT0iMjAlIiByPSI1NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOGEzMDMwIiBzdG9wLW9wYWNpdHk9IjAuNiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzYTFhMWEiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdzIiIGN4PSIyMCUiIGN5PSI4MCUiIHI9IjQwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNjODQwMjAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhMWExYSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KCiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjYmcpIi8+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZ2xvdzEpIi8+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZ2xvdzIpIi8+CgogIDwhLS0gTMOtbmVhcyBob3Jpem9udGFsZXMgZGUgdGV4dHVyYSAtLT4KICA8ZyBvcGFjaXR5PSIwLjA2IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMSI+CiAgICA8bGluZSB4MT0iMCIgeTE9IjgwIiB4Mj0iOTAwIiB5Mj0iODAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMTYwIiB4Mj0iOTAwIiB5Mj0iMTYwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjI0MCIgeDI9IjkwMCIgeTI9IjI0MCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSIzMjAiIHgyPSI5MDAiIHkyPSIzMjAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iNDAwIiB4Mj0iOTAwIiB5Mj0iNDAwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjQ4MCIgeDI9IjkwMCIgeTI9IjQ4MCIvPgogIDwvZz4KCiAgPCEtLSBDb2x1bW5hIHZlcnRlYnJhbCBlc3RpbGl6YWRhIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ1MCw2MCkiPgogICAgPCEtLSBWw6lydGVicmFzIC0tPgogICAgPHJlY3QgeD0iLTI4IiB5PSIwIiAgIHdpZHRoPSI1NiIgaGVpZ2h0PSIyNiIgcng9IjYiIGZpbGw9IiNlMDcwNDAiIG9wYWNpdHk9IjAuOTAiLz4KICAgIDxyZWN0IHg9Ii04IiAgeT0iMjYiICB3aWR0aD0iMTYiIGhlaWdodD0iMTAiIHJ4PSIzIiBmaWxsPSIjYzg0MDIwIiBvcGFjaXR5PSIwLjU1Ii8+CiAgICA8cmVjdCB4PSItMzAiIHk9IjM2IiAgd2lkdGg9IjYwIiBoZWlnaHQ9IjI4IiByeD0iNiIgZmlsbD0iI2UwNzA0MCIgb3BhY2l0eT0iMC44MyIvPgogICAgPHJlY3QgeD0iLTgiICB5PSI2NCIgIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMCIgcng9IjMiIGZpbGw9IiNjODQwMjAiIG9wYWNpdHk9IjAuNTUiLz4KICAgIDxyZWN0IHg9Ii0zMiIgeT0iNzQiICB3aWR0aD0iNjQiIGhlaWdodD0iMjgiIHJ4PSI2IiBmaWxsPSIjZTA3MDQwIiBvcGFjaXR5PSIwLjc2Ii8+CiAgICA8cmVjdCB4PSItOCIgIHk9IjEwMiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEwIiByeD0iMyIgZmlsbD0iI2M4NDAyMCIgb3BhY2l0eT0iMC41NSIvPgogICAgPHJlY3QgeD0iLTM0IiB5PSIxMTIiIHdpZHRoPSI2OCIgaGVpZ2h0PSIyOCIgcng9IjYiIGZpbGw9IiNlMDcwNDAiIG9wYWNpdHk9IjAuNzAiLz4KICAgIDxyZWN0IHg9Ii04IiAgeT0iMTQwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTAiIHJ4PSIzIiBmaWxsPSIjYzg0MDIwIiBvcGFjaXR5PSIwLjU1Ii8+CiAgICA8cmVjdCB4PSItMzYiIHk9IjE1MCIgd2lkdGg9IjcyIiBoZWlnaHQ9IjI4IiByeD0iNiIgZmlsbD0iI2UwNzA0MCIgb3BhY2l0eT0iMC42MyIvPgogICAgPHJlY3QgeD0iLTgiICB5PSIxNzgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMCIgcng9IjMiIGZpbGw9IiNjODQwMjAiIG9wYWNpdHk9IjAuNTUiLz4KICAgIDxyZWN0IHg9Ii0zNCIgeT0iMTg4IiB3aWR0aD0iNjgiIGhlaWdodD0iMjYiIHJ4PSI2IiBmaWxsPSIjZTA3MDQwIiBvcGFjaXR5PSIwLjU3Ii8+CiAgICA8cmVjdCB4PSItOCIgIHk9IjIxNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEwIiByeD0iMyIgZmlsbD0iI2M4NDAyMCIgb3BhY2l0eT0iMC40NSIvPgogICAgPHJlY3QgeD0iLTMwIiB5PSIyMjQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyNCIgcng9IjYiIGZpbGw9IiNlMDcwNDAiIG9wYWNpdHk9IjAuNDgiLz4KICAgIDwhLS0gU2Fjcm8gLS0+CiAgICA8cGF0aCBkPSJNLTI0LDI0OCBRMCwyODAgMjQsMjQ4IEwyMCwyOTYgUTAsMzEwIC0yMCwyOTYgWiIgZmlsbD0iI2M4NDAyMCIgb3BhY2l0eT0iMC41NSIvPgogIDwvZz4KCiAgPCEtLSBMw61uZWFzIGRlIGlycmFkaWFjacOzbiBkZSBkb2xvciAtLT4KICA8bGluZSB4MT0iNDc1IiB5MT0iMTgwIiB4Mj0iNTgwIiB5Mj0iMTQwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjM1IiBzdHJva2UtZGFzaGFycmF5PSI2IDUiLz4KICA8bGluZSB4MT0iNDc4IiB5MT0iMjAwIiB4Mj0iNjAwIiB5Mj0iMjEwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjI4IiBzdHJva2UtZGFzaGFycmF5PSI2IDUiLz4KICA8bGluZSB4MT0iNDc2IiB5MT0iMjIwIiB4Mj0iNTg1IiB5Mj0iMjcwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjIyIiBzdHJva2UtZGFzaGFycmF5PSI2IDUiLz4KICA8bGluZSB4MT0iNDIyIiB5MT0iMTgwIiB4Mj0iMzIwIiB5Mj0iMTQwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjM1IiBzdHJva2UtZGFzaGFycmF5PSI2IDUiLz4KICA8bGluZSB4MT0iNDE5IiB5MT0iMjAwIiB4Mj0iMzAwIiB5Mj0iMjEwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjI4IiBzdHJva2UtZGFzaGFycmF5PSI2IDUiLz4KICA8bGluZSB4MT0iNDIxIiB5MT0iMjIwIiB4Mj0iMzE1IiB5Mj0iMjcwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjIyIiBzdHJva2UtZGFzaGFycmF5PSI2IDUiLz4KCiAgPCEtLSBFdGlxdWV0YSBjYXRlZ29yw61hIC0tPgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDQ0IiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjI4KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjUiIHRleHQtdHJhbnNmb3JtPSJ1cHBlcmNhc2UiPkJJT05JQ0EgWSBTQUxVRDwvdGV4dD4KICA8IS0tIEzDrW5lYXMgZGVjb3JhdGl2YXMgLS0+CiAgPGxpbmUgeDE9IjI5MCIgeTE9IjQ2MCIgeDI9IjQwMCIgeTI9IjQ2MCIgc3Ryb2tlPSIjZTA3MDQwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC40NSIvPgogIDxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ2MCIgcj0iMyIgZmlsbD0iI2UwNzA0MCIgb3BhY2l0eT0iMC42Ii8+CiAgPGxpbmUgeDE9IjUwMCIgeTE9IjQ2MCIgeDI9IjYxMCIgeTI9IjQ2MCIgc3Ryb2tlPSIjZTA3MDQwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC40NSIvPgoKICA8IS0tIFTDrXR1bG8gY2F0ZWdvcsOtYSAtLT4KICA8dGV4dCB4PSI0NTAiIHk9IjQ3OCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC44NSkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIyIj5Eb2xvciB5IHBvc3R1cmE8L3RleHQ+Cjwvc3ZnPgo=',
-  mayores: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhMWEzYSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyZTI4NjAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cxIiBjeD0iNzIlIiBjeT0iMjIlIiByPSI1MiUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNTA0MGEwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTFhM2EiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdzIiIGN4PSIyMCUiIGN5PSI3OCUiIHI9IjM4JSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM5MDcwZTAiIHN0b3Atb3BhY2l0eT0iMC4xOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTFhM2EiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CgogIDxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2dsb3cxKSIvPgogIDxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2dsb3cyKSIvPgoKICA8IS0tIFRleHR1cmEgbMOtbmVhcyAtLT4KICA8ZyBvcGFjaXR5PSIwLjA1IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMSI+CiAgICA8bGluZSB4MT0iMCIgeTE9IjgwIiAgeDI9IjkwMCIgeTI9IjgwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjE2MCIgeDI9IjkwMCIgeTI9IjE2MCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSIyNDAiIHgyPSI5MDAiIHkyPSIyNDAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMzIwIiB4Mj0iOTAwIiB5Mj0iMzIwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjQwMCIgeDI9IjkwMCIgeTI9IjQwMCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSI0ODAiIHgyPSI5MDAiIHkyPSI0ODAiLz4KICA8L2c+CgogIDwhLS0gRmlndXJhIGh1bWFuYSBtYXlvciBjb24gYmFzdMOzbiAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTAsNTUpIj4KICAgIDwhLS0gQ2FiZXphIC0tPgogICAgPGNpcmNsZSBjeD0iMCIgY3k9IjE4IiByPSIyMiIgZmlsbD0iIzkwNzBlMCIgb3BhY2l0eT0iMC44OCIvPgogICAgPCEtLSBDdWVsbG8gLS0+CiAgICA8cmVjdCB4PSItOCIgeT0iMzgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNCIgcng9IjQiIGZpbGw9IiM3MDUwYzAiIG9wYWNpdHk9IjAuNyIvPgogICAgPCEtLSBDdWVycG8gLS0+CiAgICA8cGF0aCBkPSJNLTMwLDUyIFEtMjAsNDggMCw1MCBRMjAsNDggMzAsNTIgTDM0LDEzMCBRMjAsMTM4IDAsMTM2IFEtMjAsMTM4IC0zNCwxMzAgWiIgZmlsbD0iIzcwNTBjMCIgb3BhY2l0eT0iMC43MiIvPgogICAgPCEtLSBIb21icm9zIC8gYnJhem9zIC0tPgogICAgPCEtLSBCcmF6byBpenF1aWVyZG8gKGNvbiBiYXN0w7NuKSAtLT4KICAgIDxwYXRoIGQ9Ik0tMzAsNjAgUS01Miw4MCAtNDYsMTMwIFEtNDQsMTQ4IC00MCwxNTUiIHN0cm9rZT0iIzkwNzBlMCIgc3Ryb2tlLXdpZHRoPSIxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjciLz4KICAgIDwhLS0gQmFzdMOzbiAtLT4KICAgIDxsaW5lIHgxPSItNDAiIHkxPSIxNDAiIHgyPSItMzAiIHkyPSIyOTAiIHN0cm9rZT0iI2IwOTBmMCIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuOCIvPgogICAgPGxpbmUgeDE9Ii00NCIgeTE9IjI4OCIgeDI9Ii0xNiIgeTI9IjI4OCIgc3Ryb2tlPSIjYjA5MGYwIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC44Ii8+CiAgICA8IS0tIEJyYXpvIGRlcmVjaG8gLS0+CiAgICA8cGF0aCBkPSJNMzAsNjAgUTUyLDgwIDQ2LDEzMCBRNDQsMTQ4IDQwLDE1NSIgc3Ryb2tlPSIjOTA3MGUwIiBzdHJva2Utd2lkdGg9IjEyIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNyIvPgogICAgPCEtLSBQaWVybmEgaXpxdWllcmRhIC0tPgogICAgPHBhdGggZD0iTS0xNiwxMzUgUS0yMCwyMDAgLTIyLDI5MCIgc3Ryb2tlPSIjNzA1MGMwIiBzdHJva2Utd2lkdGg9IjE4IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNzUiLz4KICAgIDwhLS0gWmFwYXRvIGl6cXVpZXJkbyAtLT4KICAgIDxlbGxpcHNlIGN4PSItMjIiIGN5PSIyOTIiIHJ4PSIxOCIgcnk9IjgiIGZpbGw9IiM1MDMwYTAiIG9wYWNpdHk9IjAuNyIvPgogICAgPCEtLSBQaWVybmEgZGVyZWNoYSAtLT4KICAgIDxwYXRoIGQ9Ik0xNiwxMzUgUTIwLDIwMCAyMiwyOTAiIHN0cm9rZT0iIzcwNTBjMCIgc3Ryb2tlLXdpZHRoPSIxOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjc1Ii8+CiAgICA8IS0tIFphcGF0byBkZXJlY2hvIC0tPgogICAgPGVsbGlwc2UgY3g9IjIyIiBjeT0iMjkyIiByeD0iMTgiIHJ5PSI4IiBmaWxsPSIjNTAzMGEwIiBvcGFjaXR5PSIwLjciLz4KICA8L2c+CgogIDwhLS0gQ8OtcmN1bG9zIGNvbmPDqW50cmljb3Mgc3V0aWxlcyAoY2FsaWRhZCBkZSB2aWRhKSAtLT4KICA8Y2lyY2xlIGN4PSI0NTAiIGN5PSIyMjAiIHI9IjE4MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTA3MGUwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4xMiIvPgogIDxjaXJjbGUgY3g9IjQ1MCIgY3k9IjIyMCIgcj0iMTQwIiBmaWxsPSJub25lIiBzdHJva2U9IiM5MDcwZTAiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjEwIi8+CgogIDwhLS0gRXRpcXVldGEgeSB0w610dWxvIC0tPgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDQ0IiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjI4KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjUiPkJJT05JQ0EgWSBTQUxVRDwvdGV4dD4KICA8bGluZSB4MT0iMjgwIiB5MT0iNDYwIiB4Mj0iNDAwIiB5Mj0iNDYwIiBzdHJva2U9IiM5MDcwZTAiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPGNpcmNsZSBjeD0iNDUwIiBjeT0iNDYwIiByPSIzIiBmaWxsPSIjOTA3MGUwIiBvcGFjaXR5PSIwLjYiLz4KICA8bGluZSB4MT0iNTAwIiB5MT0iNDYwIiB4Mj0iNjIwIiB5Mj0iNDYwIiBzdHJva2U9IiM5MDcwZTAiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPHRleHQgeD0iNDUwIiB5PSI0NzgiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuODUpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMiI+UGVyc29uYXMgbWF5b3JlczwvdGV4dD4KPC9zdmc+Cg==',
-  deporte: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkMWUzMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTNhNTgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cxIiBjeD0iNzAlIiBjeT0iMTglIiByPSI1NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWE0YTgwIiBzdG9wLW9wYWNpdHk9IjAuNiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZDFlMzAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdzIiIGN4PSIxOCUiIGN5PSI4MCUiIHI9IjQyJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzMDgwYzAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBkMWUzMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KCiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjYmcpIi8+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZ2xvdzEpIi8+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZ2xvdzIpIi8+CgogIDxnIG9wYWNpdHk9IjAuMDUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIxIj4KICAgIDxsaW5lIHgxPSIwIiB5MT0iODAiICB4Mj0iOTAwIiB5Mj0iODAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMTYwIiB4Mj0iOTAwIiB5Mj0iMTYwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjI0MCIgeDI9IjkwMCIgeTI9IjI0MCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSIzMjAiIHgyPSI5MDAiIHkyPSIzMjAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iNDAwIiB4Mj0iOTAwIiB5Mj0iNDAwIi8+CiAgPC9nPgoKICA8IS0tIEZpZ3VyYSBjb3JyaWVuZG8gKHBvc2UgZGluw6FtaWNhKSAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTAsNzApIj4KICAgIDwhLS0gQ2FiZXphIC0tPgogICAgPGNpcmNsZSBjeD0iMzAiIGN5PSIxNSIgcj0iMjAiIGZpbGw9IiMzMDgwYzAiIG9wYWNpdHk9IjAuODgiLz4KICAgIDwhLS0gQ3VlcnBvIGluY2xpbmFkbyAtLT4KICAgIDxwYXRoIGQ9Ik0yMCwzNCBRMTAsNjAgOCwxMDAgUTYsMTIwIDEwLDEzMCIgc3Ryb2tlPSIjMjA2MGEwIiBzdHJva2Utd2lkdGg9IjIyIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNzgiLz4KICAgIDwhLS0gQnJhem8gdHJhc2VybyAoZXh0ZW5kaWRvIGF0csOhcykgLS0+CiAgICA8cGF0aCBkPSJNMTgsNTAgUS0yMCw3MCAtNTAsNTUiIHN0cm9rZT0iIzMwODBjMCIgc3Ryb2tlLXdpZHRoPSIxMSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjcyIi8+CiAgICA8IS0tIEJyYXpvIGRlbGFudGVybyAoZXh0ZW5kaWRvIGFkZWxhbnRlLWFycmliYSkgLS0+CiAgICA8cGF0aCBkPSJNMjIsNDggUTU1LDMwIDgwLDIwIiBzdHJva2U9IiMzMDgwYzAiIHN0cm9rZS13aWR0aD0iMTEiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC43MiIvPgogICAgPCEtLSBQaWVybmEgdHJhc2VyYSAoZXh0ZW5kaWRhIGF0csOhcy1hcnJpYmEpIC0tPgogICAgPHBhdGggZD0iTTEwLDEyOCBRLTE1LDE2MCAtNDAsMTcwIFEtNTUsMTc0IC02MCwxNzIiIHN0cm9rZT0iIzIwNjBhMCIgc3Ryb2tlLXdpZHRoPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjc4Ii8+CiAgICA8IS0tIFphcGF0aWxsYSB0cmFzZXJhIC0tPgogICAgPGVsbGlwc2UgY3g9Ii01OCIgY3k9IjE3NCIgcng9IjIwIiByeT0iOCIgZmlsbD0iIzFhNGE4MCIgb3BhY2l0eT0iMC44IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTAsLTU4LDE3NCkiLz4KICAgIDwhLS0gUGllcm5hIGRlbGFudGVyYSAoZmxleGlvbmFkYSwgYXZhbnphbmRvKSAtLT4KICAgIDxwYXRoIGQ9Ik0xMiwxMjYgUTMwLDE2OCAyNCwyMTAgUTIyLDIyNiAxOCwyMzIiIHN0cm9rZT0iIzIwNjBhMCIgc3Ryb2tlLXdpZHRoPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjc4Ii8+CiAgICA8IS0tIFphcGF0aWxsYSBkZWxhbnRlcmEgLS0+CiAgICA8ZWxsaXBzZSBjeD0iMjAiIGN5PSIyMzQiIHJ4PSIyMiIgcnk9IjgiIGZpbGw9IiMxYTRhODAiIG9wYWNpdHk9IjAuOCIgdHJhbnNmb3JtPSJyb3RhdGUoNSwyMCwyMzQpIi8+CiAgPC9nPgoKICA8IS0tIEzDrW5lYXMgZGUgdmVsb2NpZGFkIC0tPgogIDxsaW5lIHgxPSIxODAiIHkxPSIxNTAiIHgyPSIzNDAiIHkyPSIxNTAiIHN0cm9rZT0iIzMwODBjMCIgc3Ryb2tlLXdpZHRoPSIyIiAgIG9wYWNpdHk9IjAuMzAiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iMTc1IiB4Mj0iMzMwIiB5Mj0iMTc1IiBzdHJva2U9IiMzMDgwYzAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjIyIi8+CiAgPGxpbmUgeDE9IjIwMCIgeTE9IjIwMCIgeDI9IjM0NSIgeTI9IjIwMCIgc3Ryb2tlPSIjMzA4MGMwIiBzdHJva2Utd2lkdGg9IjEiICAgb3BhY2l0eT0iMC4xNiIvPgogIDxsaW5lIHgxPSIxNjAiIHkxPSIyMjUiIHgyPSIzMzUiIHkyPSIyMjUiIHN0cm9rZT0iIzMwODBjMCIgc3Ryb2tlLXdpZHRoPSIxIiAgIG9wYWNpdHk9IjAuMTIiLz4KCiAgPCEtLSBUcmF5ZWN0b3JpYSBwaXNhZGEgLyBvbmRhcyBiaW9tZWPDoW5pY2FzIC0tPgogIDxwYXRoIGQ9Ik0zNjAsMzUwIFEzODAsMzMwIDQwMCwzNTAgUTQyMCwzNzAgNDQwLDM1MCBRNDYwLDMzMCA0ODAsMzUwIFE1MDAsMzcwIDUyMCwzNTAgUTU0MCwzMzAgNTYwLDM1MCIKICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMwODBjMCIgc3Ryb2tlLXdpZHRoPSIxLjgiIG9wYWNpdHk9IjAuMzUiIHN0cm9rZS1kYXNoYXJyYXk9IjYgNCIvPgoKICA8IS0tIEV0aXF1ZXRhIHkgdMOtdHVsbyAtLT4KICA8dGV4dCB4PSI0NTAiIHk9IjQ0NCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4yOCkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSI1Ij5CSU9OSUNBIFkgU0FMVUQ8L3RleHQ+CiAgPGxpbmUgeDE9IjI4NSIgeTE9IjQ2MCIgeDI9IjQwMCIgeTI9IjQ2MCIgc3Ryb2tlPSIjMzA4MGMwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC40NSIvPgogIDxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ2MCIgcj0iMyIgZmlsbD0iIzMwODBjMCIgb3BhY2l0eT0iMC42Ii8+CiAgPGxpbmUgeDE9IjUwMCIgeTE9IjQ2MCIgeDI9IjYxNSIgeTI9IjQ2MCIgc3Ryb2tlPSIjMzA4MGMwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC40NSIvPgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDc4IiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjg1KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjIiPkRlcG9ydGUgeSBzYWx1ZDwvdGV4dD4KPC9zdmc+Cg==',
-  movilidad: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkMjAxMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZTQyMjgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cxIiBjeD0iNzIlIiBjeT0iMjAlIiByPSI1NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMmE2MDQwIiBzdG9wLW9wYWNpdHk9IjAuNTUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMGQyMDEwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cyIiBjeD0iMjAlIiBjeT0iNzglIiByPSI0MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNDBhMDYwIiBzdG9wLW9wYWNpdHk9IjAuMTgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMGQyMDEwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNiZykiLz4KICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnbG93MSkiLz4KICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnbG93MikiLz4KCiAgPGcgb3BhY2l0eT0iMC4wNSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEiPgogICAgPGxpbmUgeDE9IjAiIHkxPSI4MCIgIHgyPSI5MDAiIHkyPSI4MCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSIxNjAiIHgyPSI5MDAiIHkyPSIxNjAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMjQwIiB4Mj0iOTAwIiB5Mj0iMjQwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjMyMCIgeDI9IjkwMCIgeTI9IjMyMCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSI0MDAiIHgyPSI5MDAiIHkyPSI0MDAiLz4KICA8L2c+CgogIDwhLS0gU2lsbGEgZGUgcnVlZGFzIGVzdGlsaXphZGEgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDUwLDYwKSI+CiAgICA8IS0tIFJ1ZWRhIHRyYXNlcmEgZ3JhbmRlIC0tPgogICAgPGNpcmNsZSBjeD0iLTMwIiBjeT0iMjQwIiByPSI4MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDBhMDYwIiBzdHJva2Utd2lkdGg9IjgiIG9wYWNpdHk9IjAuODIiLz4KICAgIDxjaXJjbGUgY3g9Ii0zMCIgY3k9IjI0MCIgcj0iNjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzQwYTA2MCIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9IjAuMjUiLz4KICAgIDwhLS0gUmFkaW9zIHJ1ZWRhIHRyYXNlcmEgLS0+CiAgICA8ZyBzdHJva2U9IiM0MGEwNjAiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iMC40NSI+CiAgICAgIDxsaW5lIHgxPSItMzAiIHkxPSIxNjIiIHgyPSItMzAiIHkyPSIzMTgiLz4KICAgICAgPGxpbmUgeDE9IjQ4IiB5MT0iMjQwIiB4Mj0iLTEwOCIgeTI9IjI0MCIvPgogICAgICA8bGluZSB4MT0iMjUiIHkxPSIxODUiIHgyPSItODUiIHkyPSIyOTUiLz4KICAgICAgPGxpbmUgeDE9IjI1IiB5MT0iMjk1IiB4Mj0iLTg1IiB5Mj0iMTg1Ii8+CiAgICA8L2c+CgogICAgPCEtLSBSdWVkYSBkZWxhbnRlcmEgcGVxdWXDsWEgLS0+CiAgICA8Y2lyY2xlIGN4PSIxMTAiIGN5PSIyODIiIHI9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9IiM0MGEwNjAiIHN0cm9rZS13aWR0aD0iNiIgb3BhY2l0eT0iMC43OCIvPgogICAgPGNpcmNsZSBjeD0iMTEwIiBjeT0iMjgyIiByPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDBhMDYwIiBzdHJva2Utd2lkdGg9IjEuNSIgb3BhY2l0eT0iMC4yNSIvPgoKICAgIDwhLS0gQmFzdGlkb3IgLyBlc3RydWN0dXJhIHNpbGxhIC0tPgogICAgPCEtLSBBc2llbnRvIC0tPgogICAgPGxpbmUgeDE9Ii03MCIgeTE9IjE1OCIgeDI9IjEwMCIgeTI9IjE1OCIgc3Ryb2tlPSIjMmE4MDUwIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuODIiLz4KICAgIDwhLS0gUmVzcGFsZG8gLS0+CiAgICA8bGluZSB4MT0iLTcwIiB5MT0iMTU4IiB4Mj0iLTcwIiB5Mj0iNjAiICBzdHJva2U9IiMyYTgwNTAiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC44MiIvPgogICAgPCEtLSBSZXBvc2FwacOpcyB5IHZpZ2EgZGVsYW50ZXJhIC0tPgogICAgPGxpbmUgeDE9IjEwMCIgeTE9IjE1OCIgeDI9IjExMCIgeTI9IjI1MiIgc3Ryb2tlPSIjMmE4MDUwIiBzdHJva2Utd2lkdGg9IjgiICBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNzgiLz4KICAgIDwhLS0gQmFycmEgZGUgZW1wdWplIChtYW5pbGxhcikgLS0+CiAgICA8bGluZSB4MT0iLTcwIiB5MT0iNjAiICB4Mj0iLTUwIiB5Mj0iNjAiICBzdHJva2U9IiMyYTgwNTAiIHN0cm9rZS13aWR0aD0iOCIgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC43NSIvPgogICAgPGxpbmUgeDE9Ii01MCIgeTE9IjYwIiAgeDI9Ii01MCIgeTI9IjgwIiAgc3Ryb2tlPSIjMmE4MDUwIiBzdHJva2Utd2lkdGg9IjgiICBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNzUiLz4KCiAgICA8IS0tIEZpZ3VyYSBwZXJzb25hIHNlbnRhZGEgLS0+CiAgICA8IS0tIENhYmV6YSAtLT4KICAgIDxjaXJjbGUgY3g9IjMwIiBjeT0iMzIiIHI9IjIyIiBmaWxsPSIjNDBhMDYwIiBvcGFjaXR5PSIwLjg1Ii8+CiAgICA8IS0tIFRvcnNvIC0tPgogICAgPHBhdGggZD0iTTEyLDUyIFEwLDgwIC0xMCwxNTYiIHN0cm9rZT0iIzJhODA1MCIgc3Ryb2tlLXdpZHRoPSIyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjc4Ii8+CiAgICA8IS0tIEJyYXpvIGl6cXVpZXJkbyAoc29icmUgZWwgYXJvKSAtLT4KICAgIDxwYXRoIGQ9Ik0tOCw5MCBRLTQwLDExMCAtNTIsMTUwIiBzdHJva2U9IiM0MGEwNjAiIHN0cm9rZS13aWR0aD0iMTAiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC42NSIvPgogICAgPCEtLSBQaWVybmFzIC0tPgogICAgPHBhdGggZD0iTS04LDE1NSBRMzAsMTYyIDk1LDE2MCIgc3Ryb2tlPSIjMmE4MDUwIiBzdHJva2Utd2lkdGg9IjE0IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNzIiLz4KICAgIDxwYXRoIGQ9Ik05NSwxNjAgUTEwMCwxOTAgMTAwLDIxMCIgc3Ryb2tlPSIjMmE4MDUwIiBzdHJva2Utd2lkdGg9IjEyIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNjUiLz4KICA8L2c+CgogIDwhLS0gVHJheWVjdG9yaWEgZGUgbW92aW1pZW50byAtLT4KICA8cGF0aCBkPSJNMTIwLDM1MCBRMjAwLDMxMCAyOTAsMzQ1IFEzNzAsMzc1IDQ2MCwzNDAgUTU1MCwzMDUgNjQwLDM0MiBRNzIwLDM3MCA4MDAsMzQwIgogICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDBhMDYwIiBzdHJva2Utd2lkdGg9IjEuOCIgb3BhY2l0eT0iMC4zMCIgc3Ryb2tlLWRhc2hhcnJheT0iOCA1Ii8+CgogIDwhLS0gRXRpcXVldGEgeSB0w610dWxvIC0tPgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDQ0IiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjI4KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjUiPkJJT05JQ0EgWSBTQUxVRDwvdGV4dD4KICA8bGluZSB4MT0iMzMwIiB5MT0iNDYwIiB4Mj0iNDE1IiB5Mj0iNDYwIiBzdHJva2U9IiM0MGEwNjAiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPGNpcmNsZSBjeD0iNDUwIiBjeT0iNDYwIiByPSIzIiBmaWxsPSIjNDBhMDYwIiBvcGFjaXR5PSIwLjYiLz4KICA8bGluZSB4MT0iNDg1IiB5MT0iNDYwIiB4Mj0iNTcwIiB5Mj0iNDYwIiBzdHJva2U9IiM0MGEwNjAiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPHRleHQgeD0iNDUwIiB5PSI0NzgiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuODUpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMiI+TW92aWxpZGFkPC90ZXh0Pgo8L3N2Zz4K',
-  consejos: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlMjAxMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTNhMTgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cxIiBjeD0iNzIlIiBjeT0iMjAlIiByPSI1NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNGE1YTIwIiBzdG9wLW9wYWNpdHk9IjAuNTUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWUyMDEwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cyIiBjeD0iMjAlIiBjeT0iNzglIiByPSI0MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjODBhMDMwIiBzdG9wLW9wYWNpdHk9IjAuMTgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWUyMDEwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNiZykiLz4KICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnbG93MSkiLz4KICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnbG93MikiLz4KCiAgPGcgb3BhY2l0eT0iMC4wNSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEiPgogICAgPGxpbmUgeDE9IjAiIHkxPSI4MCIgIHgyPSI5MDAiIHkyPSI4MCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSIxNjAiIHgyPSI5MDAiIHkyPSIxNjAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMjQwIiB4Mj0iOTAwIiB5Mj0iMjQwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjMyMCIgeDI9IjkwMCIgeTI9IjMyMCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSI0MDAiIHgyPSI5MDAiIHkyPSI0MDAiLz4KICA8L2c+CgogIDwhLS0gQm9tYmlsbGEgZGUgaWRlYSAoY29uY2VwdG8gY29uc2VqbykgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDUwLDU1KSI+CiAgICA8IS0tIEN1ZXJwbyBib21iaWxsYSAtLT4KICAgIDxwYXRoIGQ9Ik0wLDAgQy01MCwwIC03MCwzMCAtNzAsNjUgQy03MCwxMDAgLTQ1LDEyNSAtMzAsMTQ1IEwtMzAsMTc1IEwzMCwxNzUgTDMwLDE0NSBDNDUsMTI1IDcwLDEwMCA3MCw2NSBDNzAsMzAgNTAsMCAwLDAgWiIKICAgICAgZmlsbD0iIzgwYTAzMCIgb3BhY2l0eT0iMC44MCIvPgogICAgPCEtLSBCYXNlIHJvc2NhIC0tPgogICAgPHJlY3QgeD0iLTMwIiB5PSIxNzQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMiIgcng9IjMiIGZpbGw9IiM1YTc4MjAiIG9wYWNpdHk9IjAuODUiLz4KICAgIDxyZWN0IHg9Ii0yOCIgeT0iMTg2IiB3aWR0aD0iNTYiIGhlaWdodD0iMTIiIHJ4PSIzIiBmaWxsPSIjNWE3ODIwIiBvcGFjaXR5PSIwLjgwIi8+CiAgICA8cmVjdCB4PSItMjQiIHk9IjE5OCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjEyIiByeD0iMyIgZmlsbD0iIzVhNzgyMCIgb3BhY2l0eT0iMC43NSIvPgogICAgPHJlY3QgeD0iLTE2IiB5PSIyMTAiIHdpZHRoPSIzMiIgaGVpZ2h0PSIxMCIgcng9IjQiIGZpbGw9IiM1YTc4MjAiIG9wYWNpdHk9IjAuNzAiLz4KICAgIDwhLS0gRmlsYW1lbnRvIGludGVyaW9yIC0tPgogICAgPHBhdGggZD0iTS0xOCwxNTAgUS0xOCwxMzAgLTEwLDEyMCBRMCwxMDggMTAsMTIwIFExOCwxMzAgMTgsMTUwIgogICAgICBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyMDAsMC41KSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDwhLS0gQnJpbGxvIGludGVyaW9yIGJvbWJpbGxhIC0tPgogICAgPGVsbGlwc2UgY3g9IjAiIGN5PSI4MCIgcng9IjM4IiByeT0iNDUiIGZpbGw9InJnYmEoMjAwLDI1NSwxMDAsMC4xMikiLz4KICAgIDwhLS0gRGVzdGVsbG9zIGRlIGx1eiAtLT4KICAgIDxsaW5lIHgxPSItOTAiIHkxPSI1NSIgIHgyPSItNzgiIHkyPSI2MCIgIHN0cm9rZT0iI2EwYzg0MCIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC41NSIvPgogICAgPGxpbmUgeDE9Ii05NSIgeTE9Ijc1IiAgeDI9Ii04MiIgeTI9Ijc1IiAgc3Ryb2tlPSIjYTBjODQwIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjQ1Ii8+CiAgICA8bGluZSB4MT0iLTkwIiB5MT0iOTUiICB4Mj0iLTc4IiB5Mj0iOTAiICBzdHJva2U9IiNhMGM4NDAiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuMzgiLz4KICAgIDxsaW5lIHgxPSI5MCIgIHkxPSI1NSIgIHgyPSI3OCIgIHkyPSI2MCIgIHN0cm9rZT0iI2EwYzg0MCIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC41NSIvPgogICAgPGxpbmUgeDE9Ijk1IiAgeTE9Ijc1IiAgeDI9IjgyIiAgeTI9Ijc1IiAgc3Ryb2tlPSIjYTBjODQwIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjQ1Ii8+CiAgICA8bGluZSB4MT0iOTAiICB5MT0iOTUiICB4Mj0iNzgiICB5Mj0iOTAiICBzdHJva2U9IiNhMGM4NDAiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuMzgiLz4KICAgIDxsaW5lIHgxPSItNjAiIHkxPSIyMCIgIHgyPSItNTIiIHkyPSIyOCIgIHN0cm9rZT0iI2EwYzg0MCIgc3Ryb2tlLXdpZHRoPSIyIiAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC4zNSIvPgogICAgPGxpbmUgeDE9IjYwIiAgeTE9IjIwIiAgeDI9IjUyIiAgeTI9IjI4IiAgc3Ryb2tlPSIjYTBjODQwIiBzdHJva2Utd2lkdGg9IjIiICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjM1Ii8+CiAgICA8bGluZSB4MT0iMCIgICB5MT0iLTE1IiB4Mj0iMCIgICB5Mj0iLTQiICBzdHJva2U9IiNhMGM4NDAiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNDAiLz4KICA8L2c+CgogIDwhLS0gUHVudG9zIGRlY29yYXRpdm9zIGRlIGNvbnN0ZWxhY2nDs24gLS0+CiAgPGNpcmNsZSBjeD0iMTgwIiBjeT0iMTIwIiByPSIyLjUiIGZpbGw9IiM4MGEwMzAiIG9wYWNpdHk9IjAuNCIvPgogIDxjaXJjbGUgY3g9IjIxMCIgY3k9Ijk1IiAgcj0iMS44IiBmaWxsPSIjODBhMDMwIiBvcGFjaXR5PSIwLjMiLz4KICA8Y2lyY2xlIGN4PSIxNjAiIGN5PSI4MCIgIHI9IjEuNSIgZmlsbD0iIzgwYTAzMCIgb3BhY2l0eT0iMC4yNSIvPgogIDxjaXJjbGUgY3g9IjcyMCIgY3k9IjEyMCIgcj0iMi41IiBmaWxsPSIjODBhMDMwIiBvcGFjaXR5PSIwLjQiLz4KICA8Y2lyY2xlIGN4PSI2OTAiIGN5PSI5NSIgIHI9IjEuOCIgZmlsbD0iIzgwYTAzMCIgb3BhY2l0eT0iMC4zIi8+CiAgPGNpcmNsZSBjeD0iNzQwIiBjeT0iODAiICByPSIxLjUiIGZpbGw9IiM4MGEwMzAiIG9wYWNpdHk9IjAuMjUiLz4KICA8Y2lyY2xlIGN4PSI3MjAiIGN5PSIyODAiIHI9IjIiICAgZmlsbD0iIzgwYTAzMCIgb3BhY2l0eT0iMC4zIi8+CiAgPGNpcmNsZSBjeD0iMTgwIiBjeT0iMjgwIiByPSIyIiAgIGZpbGw9IiM4MGEwMzAiIG9wYWNpdHk9IjAuMyIvPgoKICA8IS0tIEV0aXF1ZXRhIHkgdMOtdHVsbyAtLT4KICA8dGV4dCB4PSI0NTAiIHk9IjQ0NCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4yOCkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSI1Ij5CSU9OSUNBIFkgU0FMVUQ8L3RleHQ+CiAgPGxpbmUgeDE9IjI3MCIgeTE9IjQ2MCIgeDI9IjM5NSIgeTI9IjQ2MCIgc3Ryb2tlPSIjODBhMDMwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC40NSIvPgogIDxjaXJjbGUgY3g9IjQ1MCIgY3k9IjQ2MCIgcj0iMyIgZmlsbD0iIzgwYTAzMCIgb3BhY2l0eT0iMC42Ii8+CiAgPGxpbmUgeDE9IjUwNSIgeTE9IjQ2MCIgeDI9IjYzMCIgeTI9IjQ2MCIgc3Ryb2tlPSIjODBhMDMwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC40NSIvPgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDc4IiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjg1KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjIiPkNvbnNlam9zIHByw6FjdGljb3M8L3RleHQ+Cjwvc3ZnPgo=',
+  dolor: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNhMWExYSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2YTJhMmEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cxIiBjeD0iNzUlIiBjeT0iMjAlIiByPSI1NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOGEzMDMwIiBzdG9wLW9wYWNpdHk9IjAuNiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzYTFhMWEiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdzIiIGN4PSIyMCUiIGN5PSI4MCUiIHI9IjQwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNjODQwMjAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhMWExYSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KCiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjYmcpIi8+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZ2xvdzEpIi8+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZ2xvdzIpIi8+CgogIDwhLS0gTMOtbmVhcyBob3Jpem9udGFsZXMgZGUgdGV4dHVyYSAtLT4KICA8ZyBvcGFjaXR5PSIwLjA2IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMSI+CiAgICA8bGluZSB4MT0iMCIgeTE9IjgwIiB4Mj0iOTAwIiB5Mj0iODAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMTYwIiB4Mj0iOTAwIiB5Mj0iMTYwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjI0MCIgeDI9IjkwMCIgeTI9IjI0MCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSIzMjAiIHgyPSI5MDAiIHkyPSIzMjAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iNDAwIiB4Mj0iOTAwIiB5Mj0iNDAwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjQ4MCIgeDI9IjkwMCIgeTI9IjQ4MCIvPgogIDwvZz4KCiAgPCEtLSBDb2x1bW5hIHZlcnRlYnJhbCBlc3RpbGl6YWRhIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ1MCw2MCkiPgogICAgPCEtLSBWw6lydGVicmFzIC0tPgogICAgPHJlY3QgeD0iLTI4IiB5PSIwIiAgIHdpZHRoPSI1NiIgaGVpZ2h0PSIyNiIgcng9IjYiIGZpbGw9IiNlMDcwNDAiIG9wYWNpdHk9IjAuOTAiLz4KICAgIDxyZWN0IHg9Ii04IiAgeT0iMjYiICB3aWR0aD0iMTYiIGhlaWdodD0iMTAiIHJ4PSIzIiBmaWxsPSIjYzg0MDIwIiBvcGFjaXR5PSIwLjU1Ii8+CiAgICA8cmVjdCB4PSItMzAiIHk9IjM2IiAgd2lkdGg9IjYwIiBoZWlnaHQ9IjI4IiByeD0iNiIgZmlsbD0iI2UwNzA0MCIgb3BhY2l0eT0iMC44MyIvPgogICAgPHJlY3QgeD0iLTgiICB5PSI2NCIgIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMCIgcng9IjMiIGZpbGw9IiNjODQwMjAiIG9wYWNpdHk9IjAuNTUiLz4KICAgIDxyZWN0IHg9Ii0zMiIgeT0iNzQiICB3aWR0aD0iNjQiIGhlaWdodD0iMjgiIHJ4PSI2IiBmaWxsPSIjZTA3MDQwIiBvcGFjaXR5PSIwLjc2Ii8+CiAgICA8cmVjdCB4PSItOCIgIHk9IjEwMiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEwIiByeD0iMyIgZmlsbD0iI2M4NDAyMCIgb3BhY2l0eT0iMC41NSIvPgogICAgPHJlY3QgeD0iLTM0IiB5PSIxMTIiIHdpZHRoPSI2OCIgaGVpZ2h0PSIyOCIgcng9IjYiIGZpbGw9IiNlMDcwNDAiIG9wYWNpdHk9IjAuNzAiLz4KICAgIDxyZWN0IHg9Ii04IiAgeT0iMTQwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTAiIHJ4PSIzIiBmaWxsPSIjYzg0MDIwIiBvcGFjaXR5PSIwLjU1Ii8+CiAgICA8cmVjdCB4PSItMzYiIHk9IjE1MCIgd2lkdGg9IjcyIiBoZWlnaHQ9IjI4IiByeD0iNiIgZmlsbD0iI2UwNzA0MCIgb3BhY2l0eT0iMC42MyIvPgogICAgPHJlY3QgeD0iLTgiICB5PSIxNzgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMCIgcng9IjMiIGZpbGw9IiNjODQwMjAiIG9wYWNpdHk9IjAuNTUiLz4KICAgIDxyZWN0IHg9Ii0zNCIgeT0iMTg4IiB3aWR0aD0iNjgiIGhlaWdodD0iMjYiIHJ4PSI2IiBmaWxsPSIjZTA3MDQwIiBvcGFjaXR5PSIwLjU3Ii8+CiAgICA8cmVjdCB4PSItOCIgIHk9IjIxNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEwIiByeD0iMyIgZmlsbD0iI2M4NDAyMCIgb3BhY2l0eT0iMC40NSIvPgogICAgPHJlY3QgeD0iLTMwIiB5PSIyMjQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIyNCIgcng9IjYiIGZpbGw9IiNlMDcwNDAiIG9wYWNpdHk9IjAuNDgiLz4KICAgIDwhLS0gU2Fjcm8gLS0+CiAgICA8cGF0aCBkPSJNLTI0LDI0OCBRMCwyODAgMjQsMjQ4IEwyMCwyOTYgUTAsMzEwIC0yMCwyOTYgWiIgZmlsbD0iI2M4NDAyMCIgb3BhY2l0eT0iMC41NSIvPgogIDwvZz4KCiAgPCEtLSBMw61uZWFzIGRlIGlycmFkaWFjacOzbiBkZSBkb2xvciAtLT4KICA8bGluZSB4MT0iNDc1IiB5MT0iMTgwIiB4Mj0iNTgwIiB5Mj0iMTQwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjM1IiBzdHJva2UtZGFzaGFycmF5PSI2IDUiLz4KICA8bGluZSB4MT0iNDc4IiB5MT0iMjAwIiB4Mj0iNjAwIiB5Mj0iMjEwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjI4IiBzdHJva2UtZGFzaGFycmF5PSI2IDUiLz4KICA8bGluZSB4MT0iNDc2IiB5MT0iMjIwIiB4Mj0iNTg1IiB5Mj0iMjcwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjIyIiBzdHJva2UtZGFzaGFycmF5PSI2IDUiLz4KICA8bGluZSB4MT0iNDIyIiB5MT0iMTgwIiB4Mj0iMzIwIiB5Mj0iMTQwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjM1IiBzdHJva2UtZGFzaGFycmF5PSI2IDUiLz4KICA8bGluZSB4MT0iNDE5IiB5MT0iMjAwIiB4Mj0iMzAwIiB5Mj0iMjEwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjI4IiBzdHJva2UtZGFzaGFycmF5PSI2IDUiLz4KICA8bGluZSB4MT0iNDIxIiB5MT0iMjIwIiB4Mj0iMzE1IiB5Mj0iMjcwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjIyIiBzdHJva2UtZGFzaGFycmF5PSI2IDUiLz4KCiAgPCEtLSBFdGlxdWV0YSBjYXRlZ29yw61hIC0tPgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDQ0IiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjI4KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjUiIHRleHQtdHJhbnNmb3JtPSJ1cHBlcmNhc2UiPkJJw5NOSUtBIFNBTFVEPC90ZXh0PgogIDwhLS0gTMOtbmVhcyBkZWNvcmF0aXZhcyAtLT4KICA8bGluZSB4MT0iMjkwIiB5MT0iNDYwIiB4Mj0iNDAwIiB5Mj0iNDYwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPGNpcmNsZSBjeD0iNDUwIiBjeT0iNDYwIiByPSIzIiBmaWxsPSIjZTA3MDQwIiBvcGFjaXR5PSIwLjYiLz4KICA8bGluZSB4MT0iNTAwIiB5MT0iNDYwIiB4Mj0iNjEwIiB5Mj0iNDYwIiBzdHJva2U9IiNlMDcwNDAiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjQ1Ii8+CgogIDwhLS0gVMOtdHVsbyBjYXRlZ29yw61hIC0tPgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDc4IiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjg1KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjIiPkRvbG9yIHkgcG9zdHVyYTwvdGV4dD4KPC9zdmc+Cg==',
+  mayores: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhMWEzYSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyZTI4NjAiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cxIiBjeD0iNzIlIiBjeT0iMjIlIiByPSI1MiUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNTA0MGEwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTFhM2EiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdzIiIGN4PSIyMCUiIGN5PSI3OCUiIHI9IjM4JSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM5MDcwZTAiIHN0b3Atb3BhY2l0eT0iMC4xOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTFhM2EiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CgogIDxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2dsb3cxKSIvPgogIDxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2dsb3cyKSIvPgoKICA8IS0tIFRleHR1cmEgbMOtbmVhcyAtLT4KICA8ZyBvcGFjaXR5PSIwLjA1IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMSI+CiAgICA8bGluZSB4MT0iMCIgeTE9IjgwIiAgeDI9IjkwMCIgeTI9IjgwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjE2MCIgeDI9IjkwMCIgeTI9IjE2MCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSIyNDAiIHgyPSI5MDAiIHkyPSIyNDAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMzIwIiB4Mj0iOTAwIiB5Mj0iMzIwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjQwMCIgeDI9IjkwMCIgeTI9IjQwMCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSI0ODAiIHgyPSI5MDAiIHkyPSI0ODAiLz4KICA8L2c+CgogIDwhLS0gRmlndXJhIGh1bWFuYSBtYXlvciBjb24gYmFzdMOzbiAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTAsNTUpIj4KICAgIDwhLS0gQ2FiZXphIC0tPgogICAgPGNpcmNsZSBjeD0iMCIgY3k9IjE4IiByPSIyMiIgZmlsbD0iIzkwNzBlMCIgb3BhY2l0eT0iMC44OCIvPgogICAgPCEtLSBDdWVsbG8gLS0+CiAgICA8cmVjdCB4PSItOCIgeT0iMzgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNCIgcng9IjQiIGZpbGw9IiM3MDUwYzAiIG9wYWNpdHk9IjAuNyIvPgogICAgPCEtLSBDdWVycG8gLS0+CiAgICA8cGF0aCBkPSJNLTMwLDUyIFEtMjAsNDggMCw1MCBRMjAsNDggMzAsNTIgTDM0LDEzMCBRMjAsMTM4IDAsMTM2IFEtMjAsMTM4IC0zNCwxMzAgWiIgZmlsbD0iIzcwNTBjMCIgb3BhY2l0eT0iMC43MiIvPgogICAgPCEtLSBIb21icm9zIC8gYnJhem9zIC0tPgogICAgPCEtLSBCcmF6byBpenF1aWVyZG8gKGNvbiBiYXN0w7NuKSAtLT4KICAgIDxwYXRoIGQ9Ik0tMzAsNjAgUS01Miw4MCAtNDYsMTMwIFEtNDQsMTQ4IC00MCwxNTUiIHN0cm9rZT0iIzkwNzBlMCIgc3Ryb2tlLXdpZHRoPSIxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjciLz4KICAgIDwhLS0gQmFzdMOzbiAtLT4KICAgIDxsaW5lIHgxPSItNDAiIHkxPSIxNDAiIHgyPSItMzAiIHkyPSIyOTAiIHN0cm9rZT0iI2IwOTBmMCIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuOCIvPgogICAgPGxpbmUgeDE9Ii00NCIgeTE9IjI4OCIgeDI9Ii0xNiIgeTI9IjI4OCIgc3Ryb2tlPSIjYjA5MGYwIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC44Ii8+CiAgICA8IS0tIEJyYXpvIGRlcmVjaG8gLS0+CiAgICA8cGF0aCBkPSJNMzAsNjAgUTUyLDgwIDQ2LDEzMCBRNDQsMTQ4IDQwLDE1NSIgc3Ryb2tlPSIjOTA3MGUwIiBzdHJva2Utd2lkdGg9IjEyIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNyIvPgogICAgPCEtLSBQaWVybmEgaXpxdWllcmRhIC0tPgogICAgPHBhdGggZD0iTS0xNiwxMzUgUS0yMCwyMDAgLTIyLDI5MCIgc3Ryb2tlPSIjNzA1MGMwIiBzdHJva2Utd2lkdGg9IjE4IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNzUiLz4KICAgIDwhLS0gWmFwYXRvIGl6cXVpZXJkbyAtLT4KICAgIDxlbGxpcHNlIGN4PSItMjIiIGN5PSIyOTIiIHJ4PSIxOCIgcnk9IjgiIGZpbGw9IiM1MDMwYTAiIG9wYWNpdHk9IjAuNyIvPgogICAgPCEtLSBQaWVybmEgZGVyZWNoYSAtLT4KICAgIDxwYXRoIGQ9Ik0xNiwxMzUgUTIwLDIwMCAyMiwyOTAiIHN0cm9rZT0iIzcwNTBjMCIgc3Ryb2tlLXdpZHRoPSIxOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjc1Ii8+CiAgICA8IS0tIFphcGF0byBkZXJlY2hvIC0tPgogICAgPGVsbGlwc2UgY3g9IjIyIiBjeT0iMjkyIiByeD0iMTgiIHJ5PSI4IiBmaWxsPSIjNTAzMGEwIiBvcGFjaXR5PSIwLjciLz4KICA8L2c+CgogIDwhLS0gQ8OtcmN1bG9zIGNvbmPDqW50cmljb3Mgc3V0aWxlcyAoY2FsaWRhZCBkZSB2aWRhKSAtLT4KICA8Y2lyY2xlIGN4PSI0NTAiIGN5PSIyMjAiIHI9IjE4MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTA3MGUwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4xMiIvPgogIDxjaXJjbGUgY3g9IjQ1MCIgY3k9IjIyMCIgcj0iMTQwIiBmaWxsPSJub25lIiBzdHJva2U9IiM5MDcwZTAiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjEwIi8+CgogIDwhLS0gRXRpcXVldGEgeSB0w610dWxvIC0tPgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDQ0IiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjI4KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjUiPkJJw5NOSUtBIFNBTFVEPC90ZXh0PgogIDxsaW5lIHgxPSIyODAiIHkxPSI0NjAiIHgyPSI0MDAiIHkyPSI0NjAiIHN0cm9rZT0iIzkwNzBlMCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuNDUiLz4KICA8Y2lyY2xlIGN4PSI0NTAiIGN5PSI0NjAiIHI9IjMiIGZpbGw9IiM5MDcwZTAiIG9wYWNpdHk9IjAuNiIvPgogIDxsaW5lIHgxPSI1MDAiIHkxPSI0NjAiIHgyPSI2MjAiIHkyPSI0NjAiIHN0cm9rZT0iIzkwNzBlMCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuNDUiLz4KICA8dGV4dCB4PSI0NTAiIHk9IjQ3OCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC44NSkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIyIj5QZXJzb25hcyBtYXlvcmVzPC90ZXh0Pgo8L3N2Zz4K',
+  deporte: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkMWUzMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTNhNTgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cxIiBjeD0iNzAlIiBjeT0iMTglIiByPSI1NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWE0YTgwIiBzdG9wLW9wYWNpdHk9IjAuNiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZDFlMzAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdzIiIGN4PSIxOCUiIGN5PSI4MCUiIHI9IjQyJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzMDgwYzAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBkMWUzMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KCiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjYmcpIi8+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZ2xvdzEpIi8+CiAgPHJlY3Qgd2lkdGg9IjkwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9InVybCgjZ2xvdzIpIi8+CgogIDxnIG9wYWNpdHk9IjAuMDUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIxIj4KICAgIDxsaW5lIHgxPSIwIiB5MT0iODAiICB4Mj0iOTAwIiB5Mj0iODAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMTYwIiB4Mj0iOTAwIiB5Mj0iMTYwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjI0MCIgeDI9IjkwMCIgeTI9IjI0MCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSIzMjAiIHgyPSI5MDAiIHkyPSIzMjAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iNDAwIiB4Mj0iOTAwIiB5Mj0iNDAwIi8+CiAgPC9nPgoKICA8IS0tIEZpZ3VyYSBjb3JyaWVuZG8gKHBvc2UgZGluw6FtaWNhKSAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTAsNzApIj4KICAgIDwhLS0gQ2FiZXphIC0tPgogICAgPGNpcmNsZSBjeD0iMzAiIGN5PSIxNSIgcj0iMjAiIGZpbGw9IiMzMDgwYzAiIG9wYWNpdHk9IjAuODgiLz4KICAgIDwhLS0gQ3VlcnBvIGluY2xpbmFkbyAtLT4KICAgIDxwYXRoIGQ9Ik0yMCwzNCBRMTAsNjAgOCwxMDAgUTYsMTIwIDEwLDEzMCIgc3Ryb2tlPSIjMjA2MGEwIiBzdHJva2Utd2lkdGg9IjIyIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNzgiLz4KICAgIDwhLS0gQnJhem8gdHJhc2VybyAoZXh0ZW5kaWRvIGF0csOhcykgLS0+CiAgICA8cGF0aCBkPSJNMTgsNTAgUS0yMCw3MCAtNTAsNTUiIHN0cm9rZT0iIzMwODBjMCIgc3Ryb2tlLXdpZHRoPSIxMSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjcyIi8+CiAgICA8IS0tIEJyYXpvIGRlbGFudGVybyAoZXh0ZW5kaWRvIGFkZWxhbnRlLWFycmliYSkgLS0+CiAgICA8cGF0aCBkPSJNMjIsNDggUTU1LDMwIDgwLDIwIiBzdHJva2U9IiMzMDgwYzAiIHN0cm9rZS13aWR0aD0iMTEiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC43MiIvPgogICAgPCEtLSBQaWVybmEgdHJhc2VyYSAoZXh0ZW5kaWRhIGF0csOhcy1hcnJpYmEpIC0tPgogICAgPHBhdGggZD0iTTEwLDEyOCBRLTE1LDE2MCAtNDAsMTcwIFEtNTUsMTc0IC02MCwxNzIiIHN0cm9rZT0iIzIwNjBhMCIgc3Ryb2tlLXdpZHRoPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjc4Ii8+CiAgICA8IS0tIFphcGF0aWxsYSB0cmFzZXJhIC0tPgogICAgPGVsbGlwc2UgY3g9Ii01OCIgY3k9IjE3NCIgcng9IjIwIiByeT0iOCIgZmlsbD0iIzFhNGE4MCIgb3BhY2l0eT0iMC44IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTAsLTU4LDE3NCkiLz4KICAgIDwhLS0gUGllcm5hIGRlbGFudGVyYSAoZmxleGlvbmFkYSwgYXZhbnphbmRvKSAtLT4KICAgIDxwYXRoIGQ9Ik0xMiwxMjYgUTMwLDE2OCAyNCwyMTAgUTIyLDIyNiAxOCwyMzIiIHN0cm9rZT0iIzIwNjBhMCIgc3Ryb2tlLXdpZHRoPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjc4Ii8+CiAgICA8IS0tIFphcGF0aWxsYSBkZWxhbnRlcmEgLS0+CiAgICA8ZWxsaXBzZSBjeD0iMjAiIGN5PSIyMzQiIHJ4PSIyMiIgcnk9IjgiIGZpbGw9IiMxYTRhODAiIG9wYWNpdHk9IjAuOCIgdHJhbnNmb3JtPSJyb3RhdGUoNSwyMCwyMzQpIi8+CiAgPC9nPgoKICA8IS0tIEzDrW5lYXMgZGUgdmVsb2NpZGFkIC0tPgogIDxsaW5lIHgxPSIxODAiIHkxPSIxNTAiIHgyPSIzNDAiIHkyPSIxNTAiIHN0cm9rZT0iIzMwODBjMCIgc3Ryb2tlLXdpZHRoPSIyIiAgIG9wYWNpdHk9IjAuMzAiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iMTc1IiB4Mj0iMzMwIiB5Mj0iMTc1IiBzdHJva2U9IiMzMDgwYzAiIHN0cm9rZS13aWR0aD0iMS41IiBvcGFjaXR5PSIwLjIyIi8+CiAgPGxpbmUgeDE9IjIwMCIgeTE9IjIwMCIgeDI9IjM0NSIgeTI9IjIwMCIgc3Ryb2tlPSIjMzA4MGMwIiBzdHJva2Utd2lkdGg9IjEiICAgb3BhY2l0eT0iMC4xNiIvPgogIDxsaW5lIHgxPSIxNjAiIHkxPSIyMjUiIHgyPSIzMzUiIHkyPSIyMjUiIHN0cm9rZT0iIzMwODBjMCIgc3Ryb2tlLXdpZHRoPSIxIiAgIG9wYWNpdHk9IjAuMTIiLz4KCiAgPCEtLSBUcmF5ZWN0b3JpYSBwaXNhZGEgLyBvbmRhcyBiaW9tZWPDoW5pY2FzIC0tPgogIDxwYXRoIGQ9Ik0zNjAsMzUwIFEzODAsMzMwIDQwMCwzNTAgUTQyMCwzNzAgNDQwLDM1MCBRNDYwLDMzMCA0ODAsMzUwIFE1MDAsMzcwIDUyMCwzNTAgUTU0MCwzMzAgNTYwLDM1MCIKICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMwODBjMCIgc3Ryb2tlLXdpZHRoPSIxLjgiIG9wYWNpdHk9IjAuMzUiIHN0cm9rZS1kYXNoYXJyYXk9IjYgNCIvPgoKICA8IS0tIEV0aXF1ZXRhIHkgdMOtdHVsbyAtLT4KICA8dGV4dCB4PSI0NTAiIHk9IjQ0NCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4yOCkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSI1Ij5CScOTTklLQSBTQUxVRDwvdGV4dD4KICA8bGluZSB4MT0iMjg1IiB5MT0iNDYwIiB4Mj0iNDAwIiB5Mj0iNDYwIiBzdHJva2U9IiMzMDgwYzAiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPGNpcmNsZSBjeD0iNDUwIiBjeT0iNDYwIiByPSIzIiBmaWxsPSIjMzA4MGMwIiBvcGFjaXR5PSIwLjYiLz4KICA8bGluZSB4MT0iNTAwIiB5MT0iNDYwIiB4Mj0iNjE1IiB5Mj0iNDYwIiBzdHJva2U9IiMzMDgwYzAiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPHRleHQgeD0iNDUwIiB5PSI0NzgiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuODUpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMiI+RGVwb3J0ZSB5IHNhbHVkPC90ZXh0Pgo8L3N2Zz4K',
+  movilidad: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBkMjAxMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZTQyMjgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cxIiBjeD0iNzIlIiBjeT0iMjAlIiByPSI1NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMmE2MDQwIiBzdG9wLW9wYWNpdHk9IjAuNTUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMGQyMDEwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cyIiBjeD0iMjAlIiBjeT0iNzglIiByPSI0MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNDBhMDYwIiBzdG9wLW9wYWNpdHk9IjAuMTgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMGQyMDEwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNiZykiLz4KICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnbG93MSkiLz4KICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnbG93MikiLz4KCiAgPGcgb3BhY2l0eT0iMC4wNSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEiPgogICAgPGxpbmUgeDE9IjAiIHkxPSI4MCIgIHgyPSI5MDAiIHkyPSI4MCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSIxNjAiIHgyPSI5MDAiIHkyPSIxNjAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMjQwIiB4Mj0iOTAwIiB5Mj0iMjQwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjMyMCIgeDI9IjkwMCIgeTI9IjMyMCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSI0MDAiIHgyPSI5MDAiIHkyPSI0MDAiLz4KICA8L2c+CgogIDwhLS0gU2lsbGEgZGUgcnVlZGFzIGVzdGlsaXphZGEgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDUwLDYwKSI+CiAgICA8IS0tIFJ1ZWRhIHRyYXNlcmEgZ3JhbmRlIC0tPgogICAgPGNpcmNsZSBjeD0iLTMwIiBjeT0iMjQwIiByPSI4MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDBhMDYwIiBzdHJva2Utd2lkdGg9IjgiIG9wYWNpdHk9IjAuODIiLz4KICAgIDxjaXJjbGUgY3g9Ii0zMCIgY3k9IjI0MCIgcj0iNjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzQwYTA2MCIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9IjAuMjUiLz4KICAgIDwhLS0gUmFkaW9zIHJ1ZWRhIHRyYXNlcmEgLS0+CiAgICA8ZyBzdHJva2U9IiM0MGEwNjAiIHN0cm9rZS13aWR0aD0iMiIgb3BhY2l0eT0iMC40NSI+CiAgICAgIDxsaW5lIHgxPSItMzAiIHkxPSIxNjIiIHgyPSItMzAiIHkyPSIzMTgiLz4KICAgICAgPGxpbmUgeDE9IjQ4IiB5MT0iMjQwIiB4Mj0iLTEwOCIgeTI9IjI0MCIvPgogICAgICA8bGluZSB4MT0iMjUiIHkxPSIxODUiIHgyPSItODUiIHkyPSIyOTUiLz4KICAgICAgPGxpbmUgeDE9IjI1IiB5MT0iMjk1IiB4Mj0iLTg1IiB5Mj0iMTg1Ii8+CiAgICA8L2c+CgogICAgPCEtLSBSdWVkYSBkZWxhbnRlcmEgcGVxdWXDsWEgLS0+CiAgICA8Y2lyY2xlIGN4PSIxMTAiIGN5PSIyODIiIHI9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9IiM0MGEwNjAiIHN0cm9rZS13aWR0aD0iNiIgb3BhY2l0eT0iMC43OCIvPgogICAgPGNpcmNsZSBjeD0iMTEwIiBjeT0iMjgyIiByPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDBhMDYwIiBzdHJva2Utd2lkdGg9IjEuNSIgb3BhY2l0eT0iMC4yNSIvPgoKICAgIDwhLS0gQmFzdGlkb3IgLyBlc3RydWN0dXJhIHNpbGxhIC0tPgogICAgPCEtLSBBc2llbnRvIC0tPgogICAgPGxpbmUgeDE9Ii03MCIgeTE9IjE1OCIgeDI9IjEwMCIgeTI9IjE1OCIgc3Ryb2tlPSIjMmE4MDUwIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuODIiLz4KICAgIDwhLS0gUmVzcGFsZG8gLS0+CiAgICA8bGluZSB4MT0iLTcwIiB5MT0iMTU4IiB4Mj0iLTcwIiB5Mj0iNjAiICBzdHJva2U9IiMyYTgwNTAiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC44MiIvPgogICAgPCEtLSBSZXBvc2FwacOpcyB5IHZpZ2EgZGVsYW50ZXJhIC0tPgogICAgPGxpbmUgeDE9IjEwMCIgeTE9IjE1OCIgeDI9IjExMCIgeTI9IjI1MiIgc3Ryb2tlPSIjMmE4MDUwIiBzdHJva2Utd2lkdGg9IjgiICBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNzgiLz4KICAgIDwhLS0gQmFycmEgZGUgZW1wdWplIChtYW5pbGxhcikgLS0+CiAgICA8bGluZSB4MT0iLTcwIiB5MT0iNjAiICB4Mj0iLTUwIiB5Mj0iNjAiICBzdHJva2U9IiMyYTgwNTAiIHN0cm9rZS13aWR0aD0iOCIgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC43NSIvPgogICAgPGxpbmUgeDE9Ii01MCIgeTE9IjYwIiAgeDI9Ii01MCIgeTI9IjgwIiAgc3Ryb2tlPSIjMmE4MDUwIiBzdHJva2Utd2lkdGg9IjgiICBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNzUiLz4KCiAgICA8IS0tIEZpZ3VyYSBwZXJzb25hIHNlbnRhZGEgLS0+CiAgICA8IS0tIENhYmV6YSAtLT4KICAgIDxjaXJjbGUgY3g9IjMwIiBjeT0iMzIiIHI9IjIyIiBmaWxsPSIjNDBhMDYwIiBvcGFjaXR5PSIwLjg1Ii8+CiAgICA8IS0tIFRvcnNvIC0tPgogICAgPHBhdGggZD0iTTEyLDUyIFEwLDgwIC0xMCwxNTYiIHN0cm9rZT0iIzJhODA1MCIgc3Ryb2tlLXdpZHRoPSIyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjc4Ii8+CiAgICA8IS0tIEJyYXpvIGl6cXVpZXJkbyAoc29icmUgZWwgYXJvKSAtLT4KICAgIDxwYXRoIGQ9Ik0tOCw5MCBRLTQwLDExMCAtNTIsMTUwIiBzdHJva2U9IiM0MGEwNjAiIHN0cm9rZS13aWR0aD0iMTAiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC42NSIvPgogICAgPCEtLSBQaWVybmFzIC0tPgogICAgPHBhdGggZD0iTS04LDE1NSBRMzAsMTYyIDk1LDE2MCIgc3Ryb2tlPSIjMmE4MDUwIiBzdHJva2Utd2lkdGg9IjE0IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNzIiLz4KICAgIDxwYXRoIGQ9Ik05NSwxNjAgUTEwMCwxOTAgMTAwLDIxMCIgc3Ryb2tlPSIjMmE4MDUwIiBzdHJva2Utd2lkdGg9IjEyIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNjUiLz4KICA8L2c+CgogIDwhLS0gVHJheWVjdG9yaWEgZGUgbW92aW1pZW50byAtLT4KICA8cGF0aCBkPSJNMTIwLDM1MCBRMjAwLDMxMCAyOTAsMzQ1IFEzNzAsMzc1IDQ2MCwzNDAgUTU1MCwzMDUgNjQwLDM0MiBRNzIwLDM3MCA4MDAsMzQwIgogICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDBhMDYwIiBzdHJva2Utd2lkdGg9IjEuOCIgb3BhY2l0eT0iMC4zMCIgc3Ryb2tlLWRhc2hhcnJheT0iOCA1Ii8+CgogIDwhLS0gRXRpcXVldGEgeSB0w610dWxvIC0tPgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDQ0IiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjI4KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjUiPkJJw5NOSUtBIFNBTFVEPC90ZXh0PgogIDxsaW5lIHgxPSIzMzAiIHkxPSI0NjAiIHgyPSI0MTUiIHkyPSI0NjAiIHN0cm9rZT0iIzQwYTA2MCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuNDUiLz4KICA8Y2lyY2xlIGN4PSI0NTAiIGN5PSI0NjAiIHI9IjMiIGZpbGw9IiM0MGEwNjAiIG9wYWNpdHk9IjAuNiIvPgogIDxsaW5lIHgxPSI0ODUiIHkxPSI0NjAiIHgyPSI1NzAiIHkyPSI0NjAiIHN0cm9rZT0iIzQwYTA2MCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuNDUiLz4KICA8dGV4dCB4PSI0NTAiIHk9IjQ3OCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC44NSkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIyIj5Nb3ZpbGlkYWQ8L3RleHQ+Cjwvc3ZnPgo=',
+  consejos: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlMjAxMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTNhMTgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cxIiBjeD0iNzIlIiBjeT0iMjAlIiByPSI1NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNGE1YTIwIiBzdG9wLW9wYWNpdHk9IjAuNTUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWUyMDEwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3cyIiBjeD0iMjAlIiBjeT0iNzglIiByPSI0MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjODBhMDMwIiBzdG9wLW9wYWNpdHk9IjAuMTgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWUyMDEwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNiZykiLz4KICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnbG93MSkiLz4KICA8cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnbG93MikiLz4KCiAgPGcgb3BhY2l0eT0iMC4wNSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEiPgogICAgPGxpbmUgeDE9IjAiIHkxPSI4MCIgIHgyPSI5MDAiIHkyPSI4MCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSIxNjAiIHgyPSI5MDAiIHkyPSIxNjAiLz4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMjQwIiB4Mj0iOTAwIiB5Mj0iMjQwIi8+CiAgICA8bGluZSB4MT0iMCIgeTE9IjMyMCIgeDI9IjkwMCIgeTI9IjMyMCIvPgogICAgPGxpbmUgeDE9IjAiIHkxPSI0MDAiIHgyPSI5MDAiIHkyPSI0MDAiLz4KICA8L2c+CgogIDwhLS0gQm9tYmlsbGEgZGUgaWRlYSAoY29uY2VwdG8gY29uc2VqbykgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDUwLDU1KSI+CiAgICA8IS0tIEN1ZXJwbyBib21iaWxsYSAtLT4KICAgIDxwYXRoIGQ9Ik0wLDAgQy01MCwwIC03MCwzMCAtNzAsNjUgQy03MCwxMDAgLTQ1LDEyNSAtMzAsMTQ1IEwtMzAsMTc1IEwzMCwxNzUgTDMwLDE0NSBDNDUsMTI1IDcwLDEwMCA3MCw2NSBDNzAsMzAgNTAsMCAwLDAgWiIKICAgICAgZmlsbD0iIzgwYTAzMCIgb3BhY2l0eT0iMC44MCIvPgogICAgPCEtLSBCYXNlIHJvc2NhIC0tPgogICAgPHJlY3QgeD0iLTMwIiB5PSIxNzQiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMiIgcng9IjMiIGZpbGw9IiM1YTc4MjAiIG9wYWNpdHk9IjAuODUiLz4KICAgIDxyZWN0IHg9Ii0yOCIgeT0iMTg2IiB3aWR0aD0iNTYiIGhlaWdodD0iMTIiIHJ4PSIzIiBmaWxsPSIjNWE3ODIwIiBvcGFjaXR5PSIwLjgwIi8+CiAgICA8cmVjdCB4PSItMjQiIHk9IjE5OCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjEyIiByeD0iMyIgZmlsbD0iIzVhNzgyMCIgb3BhY2l0eT0iMC43NSIvPgogICAgPHJlY3QgeD0iLTE2IiB5PSIyMTAiIHdpZHRoPSIzMiIgaGVpZ2h0PSIxMCIgcng9IjQiIGZpbGw9IiM1YTc4MjAiIG9wYWNpdHk9IjAuNzAiLz4KICAgIDwhLS0gRmlsYW1lbnRvIGludGVyaW9yIC0tPgogICAgPHBhdGggZD0iTS0xOCwxNTAgUS0xOCwxMzAgLTEwLDEyMCBRMCwxMDggMTAsMTIwIFExOCwxMzAgMTgsMTUwIgogICAgICBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyMDAsMC41KSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDwhLS0gQnJpbGxvIGludGVyaW9yIGJvbWJpbGxhIC0tPgogICAgPGVsbGlwc2UgY3g9IjAiIGN5PSI4MCIgcng9IjM4IiByeT0iNDUiIGZpbGw9InJnYmEoMjAwLDI1NSwxMDAsMC4xMikiLz4KICAgIDwhLS0gRGVzdGVsbG9zIGRlIGx1eiAtLT4KICAgIDxsaW5lIHgxPSItOTAiIHkxPSI1NSIgIHgyPSItNzgiIHkyPSI2MCIgIHN0cm9rZT0iI2EwYzg0MCIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC41NSIvPgogICAgPGxpbmUgeDE9Ii05NSIgeTE9Ijc1IiAgeDI9Ii04MiIgeTI9Ijc1IiAgc3Ryb2tlPSIjYTBjODQwIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjQ1Ii8+CiAgICA8bGluZSB4MT0iLTkwIiB5MT0iOTUiICB4Mj0iLTc4IiB5Mj0iOTAiICBzdHJva2U9IiNhMGM4NDAiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuMzgiLz4KICAgIDxsaW5lIHgxPSI5MCIgIHkxPSI1NSIgIHgyPSI3OCIgIHkyPSI2MCIgIHN0cm9rZT0iI2EwYzg0MCIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC41NSIvPgogICAgPGxpbmUgeDE9Ijk1IiAgeTE9Ijc1IiAgeDI9IjgyIiAgeTI9Ijc1IiAgc3Ryb2tlPSIjYTBjODQwIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjQ1Ii8+CiAgICA8bGluZSB4MT0iOTAiICB5MT0iOTUiICB4Mj0iNzgiICB5Mj0iOTAiICBzdHJva2U9IiNhMGM4NDAiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuMzgiLz4KICAgIDxsaW5lIHgxPSItNjAiIHkxPSIyMCIgIHgyPSItNTIiIHkyPSIyOCIgIHN0cm9rZT0iI2EwYzg0MCIgc3Ryb2tlLXdpZHRoPSIyIiAgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC4zNSIvPgogICAgPGxpbmUgeDE9IjYwIiAgeTE9IjIwIiAgeDI9IjUyIiAgeTI9IjI4IiAgc3Ryb2tlPSIjYTBjODQwIiBzdHJva2Utd2lkdGg9IjIiICAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjM1Ii8+CiAgICA8bGluZSB4MT0iMCIgICB5MT0iLTE1IiB4Mj0iMCIgICB5Mj0iLTQiICBzdHJva2U9IiNhMGM4NDAiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNDAiLz4KICA8L2c+CgogIDwhLS0gUHVudG9zIGRlY29yYXRpdm9zIGRlIGNvbnN0ZWxhY2nDs24gLS0+CiAgPGNpcmNsZSBjeD0iMTgwIiBjeT0iMTIwIiByPSIyLjUiIGZpbGw9IiM4MGEwMzAiIG9wYWNpdHk9IjAuNCIvPgogIDxjaXJjbGUgY3g9IjIxMCIgY3k9Ijk1IiAgcj0iMS44IiBmaWxsPSIjODBhMDMwIiBvcGFjaXR5PSIwLjMiLz4KICA8Y2lyY2xlIGN4PSIxNjAiIGN5PSI4MCIgIHI9IjEuNSIgZmlsbD0iIzgwYTAzMCIgb3BhY2l0eT0iMC4yNSIvPgogIDxjaXJjbGUgY3g9IjcyMCIgY3k9IjEyMCIgcj0iMi41IiBmaWxsPSIjODBhMDMwIiBvcGFjaXR5PSIwLjQiLz4KICA8Y2lyY2xlIGN4PSI2OTAiIGN5PSI5NSIgIHI9IjEuOCIgZmlsbD0iIzgwYTAzMCIgb3BhY2l0eT0iMC4zIi8+CiAgPGNpcmNsZSBjeD0iNzQwIiBjeT0iODAiICByPSIxLjUiIGZpbGw9IiM4MGEwMzAiIG9wYWNpdHk9IjAuMjUiLz4KICA8Y2lyY2xlIGN4PSI3MjAiIGN5PSIyODAiIHI9IjIiICAgZmlsbD0iIzgwYTAzMCIgb3BhY2l0eT0iMC4zIi8+CiAgPGNpcmNsZSBjeD0iMTgwIiBjeT0iMjgwIiByPSIyIiAgIGZpbGw9IiM4MGEwMzAiIG9wYWNpdHk9IjAuMyIvPgoKICA8IS0tIEV0aXF1ZXRhIHkgdMOtdHVsbyAtLT4KICA8dGV4dCB4PSI0NTAiIHk9IjQ0NCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4yOCkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSI1Ij5CScOTTklLQSBTQUxVRDwvdGV4dD4KICA8bGluZSB4MT0iMjcwIiB5MT0iNDYwIiB4Mj0iMzk1IiB5Mj0iNDYwIiBzdHJva2U9IiM4MGEwMzAiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPGNpcmNsZSBjeD0iNDUwIiBjeT0iNDYwIiByPSIzIiBmaWxsPSIjODBhMDMwIiBvcGFjaXR5PSIwLjYiLz4KICA8bGluZSB4MT0iNTA1IiB5MT0iNDYwIiB4Mj0iNjMwIiB5Mj0iNDYwIiBzdHJva2U9IiM4MGEwMzAiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjQ1Ii8+CiAgPHRleHQgeD0iNDUwIiB5PSI0NzgiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuODUpIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMiI+Q29uc2Vqb3MgcHLDoWN0aWNvczwvdGV4dD4KPC9zdmc+Cg==',
 };
 function makeSVG(cat) {
   return SVG_IMAGES[cat] || SVG_IMAGES.consejos;
@@ -2969,6 +3030,7 @@ function showView(id) {
     document.getElementById(v).classList.remove('active');
   });
   document.getElementById('v' + id.charAt(0).toUpperCase() + id.slice(1)).classList.add('active');
+  document.getElementById('fabBtn').style.display = (id === 'list') ? 'flex' : 'none';
   window.onscroll = null;
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -3002,7 +3064,7 @@ function updateSideCTA(cat) {
   if (!cfg) {
     title.textContent = '¿Tu caso necesita una valoración?';
     text.textContent  = 'Si lo que lees te resuena y tienes dudas sobre tu caso, escríbeme. Puedo orientarte sin compromiso.';
-    btn.textContent   = 'Proponer un tema →';
+    btn.textContent   = 'Escribir a Julián →';
     return;
   }
   title.textContent = cfg.label + ': ¿te identificas?';
@@ -3085,20 +3147,20 @@ function showLmResult() {
     res.style.background = '#fdf3ee';
     res.style.borderLeft = '3px solid var(--copper)';
     res.style.padding    = '14px 18px';
-    res.innerHTML = '<strong style="font-family:var(--sans);color:var(--copper);">Tu caso apunta a necesitar una plantilla ortopédica a medida</strong><br><span style="font-family:var(--sans);font-size:13px;color:var(--ink-2);">La situación que describes requiere un análisis específico de tu pisada y biomecánica para diseñar la corrección adecuada. Una plantilla genérica no resolverá el problema de fondo.</span><br><a href="mailto:loquenadieteexplica.blog@gmail.com" style="font-family:var(--sans);font-size:13px;color:var(--copper);font-weight:600;">Proponer un tema relacionado →</a>';
+    res.innerHTML = '<strong style="font-family:var(--sans);color:var(--copper);">Tu caso apunta a necesitar una plantilla ortopédica a medida</strong><br><span style="font-family:var(--sans);font-size:13px;color:var(--ink-2);">La situación que describes requiere un análisis específico de tu pisada y biomecánica para diseñar la corrección adecuada. Una plantilla genérica no resolverá el problema de fondo.</span><br><a href="mailto:hola@bionikasalud.com" style="font-family:var(--sans);font-size:13px;color:var(--copper);font-weight:600;">Escribir a Julián →</a>';
   }
 }
 
 function downloadGuia() {
   // Genera y descarga la guía como HTML imprimible (funciona offline, sin servidor)
   const guia = `<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
-<title>Guía: ¿Plantilla de farmacia o a medida? · Lo Que Nadie Te Explica</title>
+<title>Guía: ¿Plantilla de farmacia o a medida? · Biónika Salud</title>
 <style>
   body { font-family: Georgia, serif; max-width: 680px; margin: 40px auto; padding: 0 24px; color: #1c1c1a; line-height: 1.7; }
-  h1 { font-size: 1.8rem; color: #3a3f4a; margin-bottom: 6px; }
+  h1 { font-size: 1.8rem; color: #1e3d2f; margin-bottom: 6px; }
   .sub { font-size: 14px; color: #6b6b66; font-family: sans-serif; margin-bottom: 32px; }
-  h2 { font-size: 1.1rem; color: #a07830; font-family: sans-serif; margin: 28px 0 8px; letter-spacing: 0.5px; }
-  .crit { background: #eae7e0; border-left: 3px solid #a07830; padding: 12px 16px; margin: 8px 0; border-radius: 0 4px 4px 0; }
+  h2 { font-size: 1.1rem; color: #b85c2a; font-family: sans-serif; margin: 28px 0 8px; letter-spacing: 0.5px; }
+  .crit { background: #f3f0ea; border-left: 3px solid #b85c2a; padding: 12px 16px; margin: 8px 0; border-radius: 0 4px 4px 0; }
   .crit strong { font-family: sans-serif; font-size: 13px; display: block; margin-bottom: 2px; }
   .crit span { font-family: sans-serif; font-size: 13px; color: #3d3d3a; }
   .result-box { border: 1px solid #ddd; border-radius: 6px; padding: 20px; margin: 16px 0; }
@@ -3108,7 +3170,7 @@ function downloadGuia() {
   @media print { body { margin: 20px; } }
 </style></head><body>
 <h1>¿Plantilla de farmacia o a medida?</h1>
-<p class="sub">Guía práctica · Lo Que Nadie Te Explica · loquenadieteexplica.com · Julián Urrea, Técnico Ortoprotésico</p>
+<p class="sub">Guía práctica · Biónika Salud · bionikasalud.com · Julián Urrea, Técnico Ortoprotésico</p>
 
 <p>Esta guía resume los criterios reales que utilizamos los técnicos ortoprotésicos para orientar a nuestros pacientes. No es un diagnóstico: es una brújula para que llegues a la consulta con una idea más clara de lo que necesitas.</p>
 
@@ -3122,15 +3184,15 @@ function downloadGuia() {
 
 <h2>Resumen rápido</h2>
 <div class="result-box">
-  <h3 style="color:#3a3f4a;">Plantilla de serie puede ser suficiente si…</h3>
+  <h3 style="color:#1e3d2f;">Plantilla de serie puede ser suficiente si…</h3>
   <p>No tienes dolor concreto · Buscas más amortiguación en un calzado concreto · El problema es leve y reciente · No tienes patología diagnosticada</p>
 </div>
 <div class="result-box">
-  <h3 style="color:#a07830;">Plantilla a medida es lo indicado si…</h3>
+  <h3 style="color:#b85c2a;">Plantilla a medida es lo indicado si…</h3>
   <p>Tienes dolor localizado que persiste más de 3 semanas · Tienes diagnóstico de pie plano, cavo, fascitis, metatarsalgia u otro · Eres deportista con lesiones repetidas · Las plantillas de serie no te han funcionado · Tienes prescripción médica</p>
 </div>
 
-<h2>El proceso de una plantilla a medida en Lo Que Nadie Te Explica</h2>
+<h2>El proceso de una plantilla a medida en Biónika</h2>
 <p style="font-family:sans-serif;font-size:13px;color:#3d3d3a;">
 1. <strong>Entrevista clínica</strong>: entendemos tu situación, actividad y objetivos.<br>
 2. <strong>Análisis estático</strong>: morfología del pie, alineación, distribución de carga en reposo.<br>
@@ -3140,7 +3202,7 @@ function downloadGuia() {
 </p>
 
 <div class="footer">
-Julián Urrea · Técnico Ortoprotésico · Granada · loquenadieteexplica.com<br>
+Julián Urrea · Técnico Ortoprotésico · Granada · bionikasalud.com<br>
 Julián Urrea — Técnico Ortoprotésico colegiado<br>
 Esta guía es informativa y no sustituye la valoración clínica presencial.
 </div>
@@ -3148,13 +3210,13 @@ Esta guía es informativa y no sustituye la valoración clínica presencial.
   const blob = new Blob([guia], { type: 'text/html' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = 'guia-plantillas-lqnte.html';
+  a.download = 'guia-plantillas-bionika-salud.html';
   a.click();
   showToast('✓ Guía descargada — ábrela en tu navegador e imprime como PDF');
 }
 
 function renderCard(p, featured) {
-  const catCfg = CAT[p.cat] || { label: p.cat, color: '#3a3f4a' };
+  const catCfg = CAT[p.cat] || { label: p.cat, color: '#1e3d2f' };
   const img = p.image || makeSVG(p.cat);
   return `
     <div class="post-card ${featured ? 'featured' : ''}" onclick="openPost(${p.id})">
@@ -3223,7 +3285,7 @@ function renderSidebar() {
   // Recientes
   document.getElementById('sbRecent').innerHTML = POSTS.slice(0, 5).map(p =>
     `<li class="sb-item" onclick="openPost(${p.id})">
-      <div class="sb-item-cat" style="color:${CAT[p.cat]?.color || '#3a3f4a'}">${CAT[p.cat]?.label || p.cat}</div>
+      <div class="sb-item-cat" style="color:${CAT[p.cat]?.color || '#1e3d2f'}">${CAT[p.cat]?.label || p.cat}</div>
       <div class="sb-item-title">${p.title}</div>
     </li>`
   ).join('');
@@ -3235,7 +3297,7 @@ function renderSidebar() {
 function openPost(id) {
   const p = POSTS.find(x => x.id === id);
   if (!p) return;
-  const catCfg = CAT[p.cat] || { label: p.cat, color: '#3a3f4a' };
+  const catCfg = CAT[p.cat] || { label: p.cat, color: '#1e3d2f' };
 
   // Breadcrumb
   document.getElementById('aCrumbCat').textContent = catCfg.label;
@@ -3333,13 +3395,13 @@ function parseContent(txt, accentColor, catKey) {
   const mid = html.indexOf('</p>', Math.floor(html.length / 2));
   if (mid > 0) {
     const catCfg = CAT[catKey] || {};
-    const ctaText = catCfg.cta || '¿Hay algo sobre este tema que quieras que explique con más detalle? Escríbeme y lo tengo en cuenta para próximos artículos.';
-    const ctaBtn  = catCfg.ctaBtn || 'Proponer un tema →';
+    const ctaText = catCfg.cta || 'Si lo que lees te suena y tienes dudas sobre tu caso, escríbeme. Puedo orientarte sin compromiso.';
+    const ctaBtn  = catCfg.ctaBtn || 'Consultar con Julián →';
     const cta = `
       <div class="inline-cta">
         <div class="inline-cta-title">¿Podría ser tu caso?</div>
         <p class="inline-cta-text">${ctaText}</p>
-        <a href="mailto:loquenadieteexplica.blog@gmail.com" class="cta-btn" style="display:inline-block;width:auto;padding:12px 28px;">
+        <a href="mailto:hola@bionikasalud.com" class="cta-btn" style="display:inline-block;width:auto;padding:12px 28px;">
           ${ctaBtn}
         </a>
       </div>`;
@@ -3367,6 +3429,86 @@ function fmt(s) {
   return s
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.+?)\*/g,     '<em>$1</em>');
+}
+
+/* ═══════════════════════════════
+   NUEVO ARTÍCULO
+═══════════════════════════════ */
+function openPanel() {
+  document.getElementById('newPanel').classList.add('open');
+  window.scrollTo({ top: 180, behavior: 'smooth' });
+}
+function closePanel() {
+  document.getElementById('newPanel').classList.remove('open');
+}
+function publishPost() {
+  const title   = document.getElementById('nTitle').value.trim();
+  const cat     = document.getElementById('nCat').value;
+  const excerpt = document.getElementById('nExcerpt').value.trim();
+  const content = document.getElementById('nContent').value.trim();
+  const image   = document.getElementById('nImage').value.trim();
+  const tagsRaw = document.getElementById('nTags').value.trim();
+
+  if (!title || !excerpt || !content) {
+    showToast('Rellena título, extracto y contenido', true); return;
+  }
+  const d = new Date();
+  const months = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  const newPost = {
+    id:       Date.now(),
+    cat, title, excerpt, content,
+    image:    image || '',
+    date:     `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`,
+    readTime: Math.max(2, Math.ceil(content.split(/\s+/).length / 200)) + ' min',
+    author:   'Julián Urrea — Técnico Ortoprotésico',
+    tags:     tagsRaw ? tagsRaw.split(',').map(t => t.trim()) : [],
+  };
+  POSTS.unshift(newPost);
+  ['nTitle','nExcerpt','nContent','nImage','nTags'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+  closePanel();
+  currentFilter = 'all'; currentPage = 1;
+  renderCatPills(); renderFeed();
+  showToast('✓ Artículo añadido. Pulsa "Guardar HTML" para que persista.');
+  // Show export button
+  document.getElementById('exportBtn').style.display = 'inline-flex';
+}
+
+function exportHTML() {
+  // Serialize current POSTS (including new ones) into the source HTML
+  const src = document.documentElement.outerHTML;
+  // Build post literal
+  const postsJSON = POSTS.map(p => {
+    const safe = s => (s || '').replace(/\`/g, "'").replace(/\${/g, '\${');
+    const tagsStr = (p.tags || []).map(t => `'${t}'`).join(', ');
+    return `  {
+    id: ${typeof p.id === 'number' ? p.id : `'${p.id}'`},
+    cat: '${p.cat}',
+    title: \`${safe(p.title)}\`,
+    excerpt: \`${safe(p.excerpt)}\`,
+    date: '${p.date}',
+    readTime: '${p.readTime}',
+    author: '${p.author}',
+    tags: [${tagsStr}],
+    image: '${p.image || ''}',
+    content: \`${safe(p.content)}\`,
+  }`;
+  }).join(',\n\n');
+
+  const marker = 'const POSTS = [';
+  const endMarker = ']; /* ← FIN DEL ARRAY';
+  const start = src.indexOf(marker) + marker.length;
+  const end   = src.indexOf(endMarker);
+  if (start < 0 || end < 0) { showToast('Error al generar el archivo', true); return; }
+
+  const newSrc = src.slice(0, start) + '\n\n' + postsJSON + '\n\n' + src.slice(end);
+  const blob = new Blob([newSrc], { type: 'text/html' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'bionikasalud.html';
+  a.click();
+  showToast('✓ HTML guardado con todos los artículos incluidos');
 }
 
 /* ═══════════════════════════════
@@ -3436,16 +3578,6 @@ function init() {
   renderCatPills();
   renderFeed();
   initCookies();
-
-  /* ── BOTÓN VOLVER ARRIBA ── */
-  const btt = document.getElementById('back-to-top');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 400) {
-      btt.classList.add('visible');
-    } else {
-      btt.classList.remove('visible');
-    }
-  }, { passive: true });
 }
 
 document.addEventListener('DOMContentLoaded', init);
