@@ -4,4 +4,4 @@ Blog divulgativo sobre ortopedia, pisada, movilidad y salud del aparato locomoto
 
 Escrito por Julián Urrea, Técnico Ortoprotésico.
 
-🌐 https://bionikasalud.github.io/bionica/
+🌐 https://bionicablog.github.io/bionica/
