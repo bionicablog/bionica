@@ -1,4 +1,20 @@
 <!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║   Lo Que Nadie Te Explica · Blog de divulgación ortopédica   ║
+  ║   Julián Urrea · Técnico Ortoprotésico · Granada             ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║                                                              ║
+  ║   Estoy empezando en esto del código y quiero mejorar        ║
+  ║   continuamente. Si has llegado hasta aquí, gracias          ║
+  ║   por leer — ya eso dice mucho de ti. ^^                     ║
+  ║                                                              ║
+  ║   Si ves algo mejorable, mal hecho o que se pueda           ║
+  ║   hacer mejor: acepto recomendaciones con mucho gusto.       ║
+  ║   loquenadieteexplica.blog@gmail.com                         ║
+  ║                                                              ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -1478,7 +1494,22 @@ img { display: block; }
       <!-- Formación continua -->
       <h2 style="font-family:var(--serif);font-size:24px;font-weight:600;color:var(--ink);margin:0 0 20px;padding-bottom:12px;border-bottom:1px solid var(--rule);">Formación continua</h2>
       <p style="font-family:var(--body);font-size:17px;font-weight:300;color:var(--ink-2);line-height:1.85;margin-bottom:24px;">Mantenerse al día en ortopedia técnica no es opcional. Estas son algunas de las formaciones especializadas que he completado:</p>
+      <!-- ── FORMACIÓN: lista de cursos (orden cronológico, el más antiguo primero) ──
+           Para añadir un curso nuevo: copia uno de los bloques <div style="display:flex...">
+           y pégalo aquí respetando el orden por año. ── -->
       <div style="display:flex;flex-direction:column;gap:12px;">
+
+        <!-- Curso 1 · Ottobock · 2020 -->
+        <div style="display:flex;align-items:flex-start;gap:16px;padding:18px 20px;background:var(--forest-t);border-radius:var(--r);">
+          <div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:var(--forest);display:flex;align-items:center;justify-content:center;">
+            <svg width="18" height="18" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <div style="font-family:var(--sans);font-size:13px;font-weight:500;color:var(--ink);margin-bottom:3px;">Curso de Alineación TT &amp; TF <em style="font-weight:300;color:var(--ink-3);">· Ottobock Ibérica · 2020</em></div>
+            <p style="font-family:var(--body);font-size:14px;font-weight:300;color:var(--ink-2);line-height:1.6;margin:0;">Seminario presencial de 8 horas en la sede de Ottobock Ibérica en Tres Cantos, Madrid. Formación especializada en componentes Otto Bock para miembro inferior: principios biomecánicos de la alineación, técnicas de banco, estática y dinámica para prótesis transtibiales y transfemorales, con uso de LASAR Posture 3D y plataformas Zebris.</p>
+          </div>
+        </div>
+        <!-- Curso 2 · Batec · 2022 -->
         <div style="display:flex;align-items:flex-start;gap:16px;padding:18px 20px;background:var(--forest-t);border-radius:var(--r);">
           <div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:var(--forest);display:flex;align-items:center;justify-content:center;">
             <svg width="18" height="18" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
@@ -1488,6 +1519,7 @@ img { display: block; }
             <p style="font-family:var(--body);font-size:14px;font-weight:300;color:var(--ink-2);line-height:1.6;margin:0;">Formación especializada en mantenimiento y servicio técnico de sillas de ruedas de tracción Batec, orientada a la adaptación y reparación para usuarios con movilidad reducida.</p>
           </div>
         </div>
+        <!-- Curso 3 · Ideo · 2023 -->
         <div style="display:flex;align-items:flex-start;gap:16px;padding:18px 20px;background:var(--forest-t);border-radius:var(--r);">
           <div style="flex-shrink:0;width:40px;height:40px;border-radius:50%;background:var(--forest);display:flex;align-items:center;justify-content:center;">
             <svg width="18" height="18" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
@@ -1618,6 +1650,16 @@ function makeSVG(cat) {
   return SVG_IMAGES[cat] || SVG_IMAGES.consejos;
 }
 
+/* ══════════════════════════════════════════
+   ARTÍCULOS — array POSTS
+   ─────────────────────────────────────────
+   Cada objeto es un artículo del blog.
+   Campos obligatorios: id, cat, title, excerpt, date, readTime, author, content
+   Campos opcionales:   image, tags
+   Para añadir un artículo nuevo: copia el bloque de uno existente,
+   cambia el id (número siguiente), rellena los campos y añádelo al final del array.
+   Categorías disponibles: dolor · mayores · deporte · movilidad · consejos
+══════════════════════════════════════════ */
 const POSTS = [
 
   /* ── 1. DOLOR Y POSTURA ── */
