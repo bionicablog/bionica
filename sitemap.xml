@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Artículo 1 · Pies -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-1</loc>
+    <lastmod>2025-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 2 · Mayores -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-2</loc>
+    <lastmod>2025-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 3 · Deporte -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-3</loc>
+    <lastmod>2025-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 4 · Movilidad -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-4</loc>
+    <lastmod>2025-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 5 · Consejos -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-5</loc>
+    <lastmod>2025-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 6 · Dolor -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-6</loc>
+    <lastmod>2025-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 7 · Pies -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-7</loc>
+    <lastmod>2025-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 8 · Deporte -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-8</loc>
+    <lastmod>2025-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 9 · Movilidad -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-9</loc>
+    <lastmod>2025-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 10 · Dolor -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-10</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 11 · Columna -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-11</loc>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 12 · Mayores -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-12</loc>
+    <lastmod>2025-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 13 · Ortesis -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-13</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 14 · Deporte -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-14</loc>
+    <lastmod>2025-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 15 · Consejos -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-15</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 16 · Dolor -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-16</loc>
+    <lastmod>2025-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 17 · Movilidad -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-17</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 18 · Consejos -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-18</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 19 · Mayores -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-19</loc>
+    <lastmod>2025-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 20 · Deporte -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-20</loc>
+    <lastmod>2025-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 21 · Ortesis -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-21</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 22 · Pies -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-22</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 23 · Mayores -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-23</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 24 · Columna -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-24</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 25 · Deporte -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-25</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 26 · Pies -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-26</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 27 · Movilidad -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-27</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 28 · Ortesis -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-28</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 29 · Columna -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-29</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 30 · Mayores -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-30</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 31 · Deporte -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-31</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 32 · Consejos · Alzas y dismetría -->
+  <url>
+    <loc>https://bionicablog.github.io/bionica/#post-32</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
