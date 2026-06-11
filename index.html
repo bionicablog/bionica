@@ -3291,6 +3291,51 @@ Con esa medida objetiva y la exploración clínica completa es posible tomar dec
 
 
 /* ═══════════════════════════════
+   SLUGS (URL por artículo)
+═══════════════════════════════ */
+const SLUGS = {
+  1:  'por-que-te-duele-el-talon-al-levantarte-por-las-mananas',
+  2:  'como-elegir-un-baston-o-andador-para-un-familiar-mayor',
+  3:  'pronacion-al-correr-cuando-es-normal-y-cuando-es-un-problema',
+  4:  '5-ejercicios-para-recuperar-movilidad-si-pasas-muchas-horas',
+  5:  'que-diferencia-una-plantilla-de-farmacia-de-una-ortopedica',
+  6:  'dolor-lumbar-que-lo-causa-realmente-y-cuando-preocuparse',
+  7:  'silla-de-ruedas-manual-como-elegir-la-adecuada-para-cada',
+  8:  'rodilla-del-corredor-por-que-aparece-y-como-prevenirla-de',
+  9:  'prevenir-caidas-en-mayores-lo-que-la-evidencia-dice-que',
+  10: 'como-cuidar-y-alargar-la-vida-de-tus-plantillas-ortopedicas',
+  11: 'metatarsalgia-por-que-duele-la-planta-del-pie-al-caminar',
+  12: 'artrosis-de-rodilla-que-es-que-no-es-y-como-mejorar-la',
+  13: 'tendinitis-de-aquiles-la-lesion-que-los-deportistas-ignoran',
+  14: 'ortesis-de-tobillo-tipos-indicaciones-y-lo-que-debes-saber',
+  15: 'como-elegir-bien-el-calzado-lo-que-realmente-importa-mas',
+  16: 'hallux-valgus-juanete-cuando-operar-y-cuando-no',
+  17: 'pie-equino-que-es-por-que-ocurre-y-como-se-trata-en-adultos',
+  18: 'que-esperar-de-un-estudio-biomecanico-el-proceso-paso-a-paso',
+  19: 'adaptaciones-ortopedicas-tras-un-ictus-que-papel-juega-el',
+  20: 'biomecanica-del-ciclismo-por-que-el-ajuste-de-la-bici-puede',
+  21: 'que-es-un-tecnico-ortoprotesico-y-que-hace-exactamente',
+  22: 'juanete-que-es-por-que-aparece-y-cuando-puede-ayudar-una',
+  23: 'linfedema-en-personas-mayores-que-es-y-como-ayuda-la',
+  24: 'escoliosis-en-adolescentes-cuando-es-necesario-un-corse-y',
+  25: 'esguince-de-tobillo-recuperacion-prevencion-de-recaidas-y',
+  26: 'pie-diabetico-por-que-los-pies-son-el-punto-mas-vulnerable',
+  27: 'silla-de-ruedas-manual-como-elegir-la-correcta-y-que',
+  28: 'que-es-una-ortesis-de-rodilla-y-cuando-esta-realmente',
+  29: 'hernia-de-disco-lumbar-que-puedes-hacer-antes-de-plantearte',
+  30: 'artrosis-de-cadera-y-rodilla-como-el-calzado-y-las',
+  31: 'fascitis-plantar-en-corredores-por-que-reaparece-y-como',
+  32: 'ese-dolor-en-la-parte-delantera-del-pie-que-es-y-por-que-no',
+  33: 'pie-plano-en-adultos-la-mayoria-no-necesita-tratamiento',
+  34: 'munequera-coddera-cabestrillo-cuando-ayudan-y-cuando-solo',
+  35: 'necesito-unas-plantillas-lo-que-esa-frase-puede-significar',
+  36: 'dolor-de-cuello-por-que-el-collarin-no-es-la-solucion-y-que',
+  37: 'la-joroba-no-es-inevitable-que-hay-detras-de-la',
+  38: 'alzas-ortopedicas-cuando-poner-un-alza-y-cuando-el-cuerpo',
+};
+const SLUG_TO_ID = Object.fromEntries(Object.entries(SLUGS).map(([id, slug]) => [slug, +id]));
+
+/* ═══════════════════════════════
    ESTADO
 ═══════════════════════════════ */
 let currentFilter = 'all';
@@ -3308,6 +3353,9 @@ function showView(id) {
   document.getElementById('v' + id.charAt(0).toUpperCase() + id.slice(1)).classList.add('active');
   window.onscroll = null;
   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Actualizar URL
+  if (id === 'list') history.pushState({view:'list'}, '', '/bionica/');
+  if (id === 'sobre') history.pushState({view:'sobre'}, '', '/bionica/sobre');
 }
 
 /* ═══════════════════════════════
@@ -3635,6 +3683,9 @@ function openPost(id) {
 
   showView('article');
   window.onscroll = updateProgress;
+  // URL real para SEO y compartir
+  const slug = SLUGS[id];
+  if (slug) history.pushState({view:'article', id}, '', '/bionica/' + slug);
 }
 
 function updateProgress() {
@@ -3768,6 +3819,28 @@ function init() {
       btt.classList.remove('visible');
     }
   }, { passive: true });
+
+  /* ── ENRUTADO POR URL ── */
+  function routeFromURL() {
+    const path = location.pathname.replace('/bionica', '').replace(/^\//, '');
+    if (!path || path === '' || path === '/') {
+      showView('list'); return;
+    }
+    if (path === 'sobre') {
+      showView('sobre'); return;
+    }
+    const id = SLUG_TO_ID[path];
+    if (id) {
+      openPost(id); return;
+    }
+    showView('list');
+  }
+
+  routeFromURL();
+
+  window.addEventListener('popstate', () => {
+    routeFromURL();
+  });
 }
 
 document.addEventListener('DOMContentLoaded', init);
