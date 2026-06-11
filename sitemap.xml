@@ -1,268 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Página principal -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Artículo 1 · Pies -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-1</loc>
-    <lastmod>2025-02-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 2 · Mayores -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-2</loc>
-    <lastmod>2025-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 3 · Deporte -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-3</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 4 · Movilidad -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-4</loc>
-    <lastmod>2025-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 5 · Consejos -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-5</loc>
-    <lastmod>2025-02-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 6 · Dolor -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-6</loc>
-    <lastmod>2025-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 7 · Pies -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-7</loc>
-    <lastmod>2025-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 8 · Deporte -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-8</loc>
-    <lastmod>2025-03-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 9 · Movilidad -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-9</loc>
-    <lastmod>2025-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 10 · Dolor -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-10</loc>
-    <lastmod>2025-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 11 · Columna -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-11</loc>
-    <lastmod>2025-04-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 12 · Mayores -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-12</loc>
-    <lastmod>2025-04-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 13 · Ortesis -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-13</loc>
-    <lastmod>2025-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 14 · Deporte -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-14</loc>
-    <lastmod>2025-04-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 15 · Consejos -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-15</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 16 · Dolor -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-16</loc>
-    <lastmod>2025-04-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 17 · Movilidad -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-17</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 18 · Consejos -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-18</loc>
-    <lastmod>2025-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 19 · Mayores -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-19</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 20 · Deporte -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-20</loc>
-    <lastmod>2025-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 21 · Ortesis -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-21</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 22 · Pies -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-22</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 23 · Mayores -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-23</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 24 · Columna -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-24</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 25 · Deporte -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-25</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 26 · Pies -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-26</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 27 · Movilidad -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-27</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 28 · Ortesis -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-28</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 29 · Columna -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-29</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 30 · Mayores -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-30</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 31 · Deporte -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-31</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artículo 32 · Consejos · Alzas y dismetría -->
-  <url>
-    <loc>https://bionicablog.github.io/bionica/#post-32</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://bionicablog.github.io/bionica/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/por-que-te-duele-el-talon-al-levantarte-por-las-mananas</loc><lastmod>2025-03-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/como-elegir-un-baston-o-andador-para-un-familiar-mayor</loc><lastmod>2025-03-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/pronacion-al-correr-cuando-es-normal-y-cuando-es-un-problema</loc><lastmod>2025-03-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/5-ejercicios-para-recuperar-movilidad-si-pasas-muchas-horas</loc><lastmod>2025-02-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/que-diferencia-una-plantilla-de-farmacia-de-una-ortopedica</loc><lastmod>2025-02-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/dolor-lumbar-que-lo-causa-realmente-y-cuando-preocuparse</loc><lastmod>2025-04-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/silla-de-ruedas-manual-como-elegir-la-adecuada-para-cada</loc><lastmod>2025-03-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/rodilla-del-corredor-por-que-aparece-y-como-prevenirla-de</loc><lastmod>2025-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/prevenir-caidas-en-mayores-lo-que-la-evidencia-dice-que</loc><lastmod>2025-03-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/como-cuidar-y-alargar-la-vida-de-tus-plantillas-ortopedicas</loc><lastmod>2025-04-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/metatarsalgia-por-que-duele-la-planta-del-pie-al-caminar</loc><lastmod>2025-04-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/artrosis-de-rodilla-que-es-que-no-es-y-como-mejorar-la</loc><lastmod>2025-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/tendinitis-de-aquiles-la-lesion-que-los-deportistas-ignoran</loc><lastmod>2025-04-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/ortesis-de-tobillo-tipos-indicaciones-y-lo-que-debes-saber</loc><lastmod>2025-03-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/como-elegir-bien-el-calzado-lo-que-realmente-importa-mas</loc><lastmod>2025-04-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/hallux-valgus-juanete-cuando-operar-y-cuando-no</loc><lastmod>2025-04-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/pie-equino-que-es-por-que-ocurre-y-como-se-trata-en-adultos</loc><lastmod>2025-04-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/que-esperar-de-un-estudio-biomecanico-el-proceso-paso-a-paso</loc><lastmod>2025-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/adaptaciones-ortopedicas-tras-un-ictus-que-papel-juega-el</loc><lastmod>2025-04-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/biomecanica-del-ciclismo-por-que-el-ajuste-de-la-bici-puede</loc><lastmod>2025-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/que-es-un-tecnico-ortoprotesico-y-que-hace-exactamente</loc><lastmod>2025-05-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/juanete-que-es-por-que-aparece-y-cuando-puede-ayudar-una</loc><lastmod>2025-05-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/linfedema-en-personas-mayores-que-es-y-como-ayuda-la</loc><lastmod>2025-06-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/escoliosis-en-adolescentes-cuando-es-necesario-un-corse-y</loc><lastmod>2025-06-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/esguince-de-tobillo-recuperacion-prevencion-de-recaidas-y</loc><lastmod>2025-07-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/pie-diabetico-por-que-los-pies-son-el-punto-mas-vulnerable</loc><lastmod>2025-07-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/silla-de-ruedas-manual-como-elegir-la-correcta-y-que</loc><lastmod>2025-07-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/que-es-una-ortesis-de-rodilla-y-cuando-esta-realmente</loc><lastmod>2025-08-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/hernia-de-disco-lumbar-que-puedes-hacer-antes-de-plantearte</loc><lastmod>2025-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/artrosis-de-cadera-y-rodilla-como-el-calzado-y-las</loc><lastmod>2025-09-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/fascitis-plantar-en-corredores-por-que-reaparece-y-como</loc><lastmod>2025-10-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/ese-dolor-en-la-parte-delantera-del-pie-que-es-y-por-que-no</loc><lastmod>2025-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/pie-plano-en-adultos-la-mayoria-no-necesita-tratamiento</loc><lastmod>2025-10-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/munequera-coddera-cabestrillo-cuando-ayudan-y-cuando-solo</loc><lastmod>2025-11-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/necesito-unas-plantillas-lo-que-esa-frase-puede-significar</loc><lastmod>2025-11-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/dolor-de-cuello-por-que-el-collarin-no-es-la-solucion-y-que</loc><lastmod>2025-12-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/la-joroba-no-es-inevitable-que-hay-detras-de-la</loc><lastmod>2026-01-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://bionicablog.github.io/bionica/alzas-ortopedicas-cuando-poner-un-alza-y-cuando-el-cuerpo</loc><lastmod>2026-06-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
 </urlset>
