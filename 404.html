@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lo Que Nadie Te Explica</title>
+  <script>
+    // GitHub Pages SPA redirect
+    // Redirige cualquier URL a index.html conservando el path
+    // para que el router de la app pueda procesarla
+    var path = window.location.pathname;
+    window.location.replace('/bionica/' + (path.replace('/bionica/', '') || ''));
+  </script>
+</head>
+<body></body>
+</html>
