@@ -3396,10 +3396,26 @@ function onSearch(q) {
   const catStrip    = document.getElementById('catsStripWrap');
   const feed        = document.getElementById('postsFeed');
   const pag         = document.getElementById('pagination');
-  if (!q || q.trim().length < 2) {
-    clearSearch(); return;
+  if (!q || q.trim().length === 0) {
+    if (clear) clear.style.display = 'none';
+    if (resultsWrap) resultsWrap.style.display = 'none';
+    if (catStrip)    catStrip.style.display    = '';
+    if (feed) { feed.style.display = 'flex'; feed.style.flexDirection = 'column'; }
+    if (pag)         pag.style.display         = '';
+    return;
   }
   if (clear) clear.style.display = 'block';
+  if (q.trim().length < 2) {
+    resultsWrap.style.display = 'block';
+    if (catStrip) catStrip.style.display = 'none';
+    if (feed) feed.style.display = 'none';
+    if (pag)  pag.style.display  = 'none';
+    const _infoEl = document.getElementById('searchInfo');
+    if (_infoEl) _infoEl.textContent = 'Sigue escribiendo…';
+    const list = document.getElementById('searchList');
+    if (list) list.innerHTML = '';
+    return;
+  }
   const term = q.toLowerCase();
   const hits = POSTS.filter(p =>
     p.title.toLowerCase().includes(term) ||
@@ -3841,4 +3857,3 @@ document.addEventListener('DOMContentLoaded', init);
 </script>
 </body>
 </html>
-
