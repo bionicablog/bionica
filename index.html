@@ -32,22 +32,34 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-/* ── BUSCADOR HERO ── */
-.hero-search {
-  display:flex;align-items:center;gap:10px;
-  background:rgba(255,255,255,0.12);
-  border:1px solid rgba(255,255,255,0.25);
-  border-radius:var(--r-lg);
-  padding:11px 16px;
-  margin:24px 0 20px;
-  max-width:520px;
-  backdrop-filter:blur(4px);
+/* ── BUSCADOR EN BARRA DE CATEGORÍAS ── */
+.cats-strip-inner-wrap {
+  max-width: 1200px; margin: 0 auto;
+  padding: 0 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px;
 }
-.hero-search input {
+.strip-search {
+  display:flex;align-items:center;gap:8px;
+  background:var(--paper-2);
+  border:1px solid var(--rule);
+  border-radius:var(--r);
+  padding:8px 14px;
+  flex-shrink: 0;
+  width: 240px;
+  transition: width .2s, border-color .2s;
+}
+.strip-search:focus-within {
+  width: 280px;
+  border-color: var(--forest-3);
+  background: #fff;
+}
+.strip-search input {
   flex:1;background:none;border:none;outline:none;
-  font-family:var(--sans);font-size:15px;color:#fff;
+  font-family:var(--sans);font-size:13.5px;color:var(--ink);
+  width: 100%;
 }
-.hero-search input::placeholder { color:rgba(255,255,255,0.55); }
+.strip-search input::placeholder { color:var(--ink-4); }
 /* ── HERO CTAs ── */
 .hero-ctas { display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px; }
 .hero-cta-primary {
@@ -243,9 +255,12 @@ img { display: block; }
   background: radial-gradient(circle, rgba(61,122,94,0.35) 0%, transparent 70%);
 }
 .hero-inner {
-  max-width: 720px; margin: 0 auto;
+  max-width: 1200px; margin: 0 auto;
   text-align: center; position: relative; z-index: 1;
 }
+.hero-inner > * { max-width: 720px; margin-left: auto; margin-right: auto; }
+.hero-inner > .hero-ctas,
+.hero-inner > .hero-author { max-width: 100%; }
 .hero-kicker {
   display: inline-flex; align-items: center; gap: 10px;
   font-family: var(--sans);
@@ -314,9 +329,8 @@ img { display: block; }
   position: sticky; top: 68px; z-index: 100;
 }
 .cats-strip-inner {
-  max-width: 1200px; margin: 0 auto;
-  padding: 0 48px;
   display: flex; overflow-x: auto; scrollbar-width: none;
+  flex: 1; min-width: 0;
 }
 .cats-strip-inner::-webkit-scrollbar { display: none; }
 .cat-pill {
@@ -1012,10 +1026,11 @@ img { display: block; }
   .hero { padding: 64px 20px 56px; }
   .hero-inner { text-align: left; }
   .hero-kicker { justify-content: flex-start; }
-  .hero-search { max-width: 100%; }
   .hero-ctas { flex-direction: column; }
   .hero-cta-primary, .hero-cta-secondary { width: 100%; justify-content: center; }
-  .cats-strip-inner { padding: 0 20px; }
+  .cats-strip-inner-wrap { flex-direction: column; align-items: stretch; padding: 12px 20px; gap: 10px; }
+  .strip-search { width: 100%; }
+  .strip-search:focus-within { width: 100%; }
   .content-grid { grid-template-columns: 1fr; padding: 36px 20px; gap: 48px; }
   .post-card { grid-template-columns: 1fr; }
   .post-card .post-thumb { aspect-ratio: 16/9; height: auto; }
@@ -1129,12 +1144,6 @@ img { display: block; }
         Artículos claros sobre ortopedia, biomecánica y movilidad.<br>
         Sin tecnicismos innecesarios. Para que entiendas qué te pasa y qué puedes hacer.
       </p>
-      <!-- Buscador hero -->
-      <div class="hero-search">
-        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="flex-shrink:0;opacity:0.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" id="heroSearch" placeholder="Busca: fascitis plantar, rodilla, bastón…" oninput="onSearch(this.value)" autocomplete="off">
-        <button onclick="clearSearch()" id="searchClearBtn" style="display:none;background:none;border:none;cursor:pointer;color:var(--ink-3);font-size:18px;line-height:1;padding:0 2px;">×</button>
-      </div>
       <!-- CTAs -->
       <div class="hero-ctas">
         <a href="mailto:loquenadieteexplica.blog@gmail.com" class="hero-cta-primary">Propón un tema para el blog →</a>
@@ -1186,9 +1195,16 @@ img { display: block; }
     <div id="searchList" class="posts-feed"></div>
   </div>
 
-  <!-- Filtro categorías -->
+  <!-- Filtro categorías + buscador -->
   <div class="cats-strip" id="catsStripWrap">
-    <div class="cats-strip-inner" id="catPills"></div>
+    <div class="cats-strip-inner-wrap">
+      <div class="cats-strip-inner" id="catPills"></div>
+      <div class="strip-search">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="flex-shrink:0;opacity:0.45"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="heroSearch" placeholder="Buscar artículos…" oninput="onSearch(this.value)" autocomplete="off">
+        <button onclick="clearSearch()" id="searchClearBtn" style="display:none;background:none;border:none;cursor:pointer;color:var(--ink-3);font-size:18px;line-height:1;padding:0 2px;">×</button>
+      </div>
+    </div>
   </div>
 
   <!-- Grid principal -->
