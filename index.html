@@ -3443,7 +3443,6 @@ function onSearch(q) {
   const list = document.getElementById('searchList');
   if (list) list.innerHTML = hits.map(p => renderCard(p, false)).join('');
   resultsWrap.style.display = 'block';
-  if (catStrip) catStrip.style.display = 'none';
   if (feed) feed.style.display = 'none';
   if (pag)  pag.style.display  = 'none';
 }
