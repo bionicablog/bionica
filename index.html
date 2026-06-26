@@ -3420,10 +3420,9 @@ function onSearch(q) {
     if (pag)         pag.style.display         = '';
     return;
   }
-  if (clear) clear.style.display = 'block';
-  if (q.trim().length < 2) {
+    if (clear) clear.style.display = 'block';
+    if (q.trim().length < 2) {
     resultsWrap.style.display = 'block';
-    if (catStrip) catStrip.style.display = 'none';
     if (feed) feed.style.display = 'none';
     if (pag)  pag.style.display  = 'none';
     const _infoEl = document.getElementById('searchInfo');
