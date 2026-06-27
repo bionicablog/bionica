@@ -385,7 +385,7 @@ img { display: block; }
 
 /* Card destacada (primera) */
 .post-card.featured {
-  grid-template-columns: 340px 1fr;
+  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
   gap: 40px;
   align-items: center;
 }
@@ -1047,6 +1047,12 @@ img { display: block; }
   .legal-doc { padding: 24px 18px; }
   .cookie-banner { padding: 16px 20px; }
   .site-nav .nav-hide { display: none; }
+}
+
+@media (max-width: 700px) {
+  .post-card.featured { grid-template-columns: 1fr; }
+  .post-card.featured .post-thumb { aspect-ratio: 16/9; height: auto; }
+  .post-card.featured .post-title { font-size: 22px; }
 }
 
 @media (max-width: 480px) {
